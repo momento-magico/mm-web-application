@@ -1,5 +1,6 @@
-import React from "react";
 import { Header } from "./Header";
+import banner from "../../../public/assets/images/banner.avif";
+import Image from "next/image";
 export const HeroSection = () => {
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
@@ -7,8 +8,9 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/50 to-[#0A0A0A]/100 z-10" />
-        <img
-          src="https://uploadthingy.s3.us-west-1.amazonaws.com/dQ2CS7E6ahUmVhz961p6f2/bannar.png"
+        <Image
+          src={banner}
+          fill
           alt="Concert stage with blue lights"
           className="w-full h-full object-cover"
         />

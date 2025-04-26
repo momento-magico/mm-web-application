@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import dream from "../../../public/assets/images/dream.avif";
 export const DreamSection = () => {
   return (
     <section className="relative w-full min-h-screen bg-[#0A0A0A] text-white">
@@ -6,10 +7,10 @@ export const DreamSection = () => {
 
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://uploadthingy.s3.us-west-1.amazonaws.com/mXtm1m3VJmNR1UGb4uaGMc/section_background.png"
+        <Image
+          src={dream}
+          fill
           alt="Concert crowd at night with stage lights"
-          className="w-full h-full object-cover"
         />
       </div>
       {/* Content */}

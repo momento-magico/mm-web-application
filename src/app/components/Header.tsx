@@ -1,9 +1,9 @@
 import Image from "next/image";
-import React from "react";
 import logo from '../../../public/assets/images/logo.png'
+import Link from "next/link";
 export const Header = () => {
   return (
-    <header className="absolute top-2 left-0 w-full z-10 p-8">
+    <header className="absolute top-2 left-0 w-full z-50 p-8">
       <div className="container mx-auto flex justify-between items-center">
         <Image
        
@@ -12,28 +12,28 @@ export const Header = () => {
         <nav>
           <ul className="flex space-x-8">
             <li>
-              <a
+              <Link
                 href="#events"
                 className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
               >
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#about"
                 className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#contact"
                 className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

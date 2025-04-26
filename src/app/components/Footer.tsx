@@ -44,7 +44,7 @@ export const Footer = () => {
             </div>
           </div>
           {/* Right Form */}
-          <div>
+          <div id="contact">
             <form className="space-y-6">
               <input
                 type="text"

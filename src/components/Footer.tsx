@@ -1,6 +1,35 @@
+"use client";
 
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { useRef } from "react";
+const SENDER_EMAIL = "info@momentomagico.lk";
 export const Footer = () => {
+  const nameRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const name = nameRef.current?.value;
+    const email = emailRef.current?.value;
+    const message = messageRef.current?.value;
+
+    if (name && email && message) {
+      const subject = encodeURIComponent(`New message from ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      );
+      const mailtoLink = `mailto:${SENDER_EMAIL}?subject=${subject}&body=${body}`;
+
+      const a = document.createElement("a");
+      a.href = mailtoLink;
+      a.click(); 
+      a.remove();
+      if (nameRef.current) nameRef.current.value = "";
+      if (emailRef.current) emailRef.current.value = "";
+      if (messageRef.current) messageRef.current.value = "";
+    }
+  };
   return (
     <footer className="bg-[#0A0A0A] text-white py-8 md:py-20  px-5 md-px-0">
       <div className="container mx-auto">
@@ -45,23 +74,26 @@ export const Footer = () => {
           </div>
           {/* Right Form */}
           <div id="contact">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="NAME"
-                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm uppercase tracking-wider focus:outline-none focus:border-white/40 transition-colors rounded-full"
+                ref={nameRef}
+                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm capitalize tracking-wider focus:outline-none focus:border-white/40 transition-colors rounded-full"
               />
               <input
                 type="email"
+                ref={emailRef}
                 placeholder="EMAIL"
-                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm uppercase tracking-wider focus:outline-none focus:border-white/40 transition-colors rounded-full"
+                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm tracking-wider focus:outline-none focus:border-white/40 transition-colors rounded-full"
               />
               <textarea
                 placeholder="MESSAGE"
+                ref={messageRef}
                 rows={6}
-                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm uppercase tracking-wider focus:outline-none focus:border-white/40 transition-colors resize-none rounded-3xl"
+                className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm tracking-wider focus:outline-none focus:border-white/40 transition-colors resize-none rounded-3xl"
               ></textarea>
-              <button className="border-2 border-white/80 w-full bg-white/10 text-white py-4 text-sm uppercase tracking-wider hover:bg-white/20 transition-colors font-bold rounded-full h-12 md:h-auto flex items-center justify-center">
+              <button className="border-2 border-white/80 w-full bg-white/10 text-white py-4 text-sm uppercase tracking-wider hover:bg-white/20 transition-colors font-bold rounded-full h-12 md:h-auto flex items-center justify-center cursor-pointer">
                 Submit Your Request
               </button>
             </form>

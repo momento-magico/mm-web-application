@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dream from "../../../public/assets/images/dream.avif";
+import dream from "../../public/assets/images/dream.avif";
 export const DreamSection = () => {
   return (
     <section className="relative w-full min-h-screen bg-[#0A0A0A] text-white">

@@ -1,5 +1,5 @@
 import { Header } from "./Header";
-import banner from "../../../public/assets/images/banner.avif";
+import banner from "../../public/assets/images/banner.avif";
 import Image from "next/image";
 export const HeroSection = () => {
   return (

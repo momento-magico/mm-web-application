@@ -1,12 +1,12 @@
 import React from "react";
 import { Music, Disc, Radio } from "lucide-react";
 import { CountdownTimer } from "./CountdownTimer";
-import redbull from "../../../public/assets/images/redbull.webp";
-import bacadi from "../../../public/assets/images/baca.webp";
-import dist from "../../../public/assets/images/dist.png";
-import lion from "../../../public/assets/images/lion.png";
-import sun from "../../../public/assets/images/sun.png";
-import asian from "../../../public/assets/images/asian.png";
+import redbull from "../../public/assets/images/redbull.webp";
+import bacadi from "../../public/assets/images/baca.webp";
+import dist from "../../public/assets/images/dist.png";
+import lion from "../../public/assets/images/lion.png";
+import sun from "../../public/assets/images/sun.png";
+import asian from "../../public/assets/images/asian.png";
 import Image from "next/image";
 
 export const ServicesSection = () => {

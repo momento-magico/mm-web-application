@@ -2,13 +2,13 @@ import React from "react";
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 export const Footer = () => {
   return (
-    <footer className="bg-[#0A0A0A] text-white py-20">
+    <footer className="bg-[#0A0A0A] text-white py-8 md:py-20  px-5 md-px-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl font-light mb-6">{`Let's Make Magic`}</h2>
-            <p className="text-gray-400 mb-12 max-w-md">
+            <h2 className=" text-3xl md:text-4xl font-light mb-6">{`Let's Make Magic`}</h2>
+            <p className="text-gray-400 mb-12 max-w-md text-sm">
               {`Got questions, ideas, or just want to say hey? We'd love to hear
               from you. Whether you're a fan, artist, vendor, or fellow dreamer,
               Dreamland is all about connection. Drop us a message and let's
@@ -61,14 +61,14 @@ export const Footer = () => {
                 rows={6}
                 className="w-full bg-transparent border border-white/20 py-4 px-6 text-sm uppercase tracking-wider focus:outline-none focus:border-white/40 transition-colors resize-none rounded-3xl"
               ></textarea>
-              <button className="border-2 border-white/80 w-full bg-white/10 text-white py-4 text-sm uppercase tracking-wider hover:bg-white/20 transition-colors font-bold rounded-full">
+              <button className="border-2 border-white/80 w-full bg-white/10 text-white py-4 text-sm uppercase tracking-wider hover:bg-white/20 transition-colors font-bold rounded-full h-12 md:h-auto flex items-center justify-center">
                 Submit Your Request
               </button>
             </form>
           </div>
         </div>
         {/* Bottom Section */}
-        <div className="mt-20 pt-8 border-t border-white/10 text-center text-sm text-white">
+        <div className="mt-20 pt-8 border-t border-white/10 text-center text-[8px] md:text-sm text-white">
           <p className="flex items-center justify-center space-x-4">
             <span>©2025 MOMENTO MAGICO</span>
             <span>•</span>

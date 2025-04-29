@@ -11,10 +11,10 @@ import Image from "next/image";
 
 export const ServicesSection = () => {
   return (
-    <section id="events" className="relative w-full bg-[#0A0A0A] text-white pt-4 pb-50">
+    <section id="events" className="relative w-full bg-[#0A0A0A] text-white pt-4 pb-50 px-5 md-px-0">
       <div className="container mx-auto relative z-10">
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:mb-20">
           {/* Music Events & Festivals */}
           <div className="text-left backdrop-blur-sm rounded-lg">
             <div className=" mb-6">
@@ -66,7 +66,7 @@ export const ServicesSection = () => {
           </div>
         </div>
         {/* Sponsors Row */}
-        <div className="flex justify-between items-center space-x-12 opacity-70 mt-32 mb-8 mr-8">
+        <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 md:mt-32 mb-8 md:mr-8">
           <div className=" h-12 w-48">
             <Image
               src={redbull}
@@ -94,7 +94,7 @@ export const ServicesSection = () => {
         {/* Countdown Timer */}
         <CountdownTimer />
         {/* Event Card */}
-        <div className="absolute -bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-24 bg-white/50 z-20"></div>
+        <div className="absolute -bottom-38 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-20 md:h-24 bg-white/50 z-20"></div>
       </div>
     </section>
   );

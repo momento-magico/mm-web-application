@@ -99,7 +99,7 @@ const ChatButton = () => {
         </a>
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/momentomagico"
+          href="https://instagram.com/direct/t/momentomagico"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-purple-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-purple-900/30"

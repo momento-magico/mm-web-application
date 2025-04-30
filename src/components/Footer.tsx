@@ -140,11 +140,11 @@ export const Footer = () => {
           <p className="flex items-center justify-center space-x-4">
             <span>©2025 MOMENTO MAGICO</span>
             <span>•</span>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="terms-conditions" className="hover:text-white transition-colors">
               TERMS & CONDITIONS
             </a>
             <span>•</span>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/privacy-policy" className="hover:text-white transition-colors">
               PRIVACY POLICY
             </a>
           </p>

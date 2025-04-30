@@ -70,6 +70,13 @@ export const Footer = () => {
               >
                 <Youtube size={20} />
               </Link>
+              <Link
+                href="https://www.tiktok.com/@momentomagico.lk"
+                target="_blank"
+                className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
+              >
+                <Instagram size={20} />
+              </Link>
             </div>
           </div>
           {/* Right Form */}

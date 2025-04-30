@@ -6,7 +6,7 @@ const ChatButton = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="fixed bottom-12 md:bottom-6 right-6 z-50">
+    <div className="fixed bottom-12 md:bottom-6 right-6 z-50 ">
       {/* Social Options */}
       <div
         className={`flex flex-col-reverse gap-3 mb-3 transition-all duration-500 ease-in-out ${
@@ -17,7 +17,7 @@ const ChatButton = () => {
       >
         {/* WhatsApp */}
         <a
-          href="https://wa.me/94771234567"
+          href="https://wa.me/+94771234567"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center bg-green-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-green-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-900/30"
@@ -142,7 +142,7 @@ const ChatButton = () => {
       {/* Main Chat Button */}
       <button
         onClick={toggleChat}
-        className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg focus:outline-none transform transition-all duration-300 ${
+        className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg focus:outline-none transform transition-all duration-300 cursor-pointer ${
           isOpen
             ? "bg-red-600 shadow-red-900/20 rotate-45"
             : "bg-gray-800 hover:bg-gray-700 shadow-gray-900/20 hover:scale-110"

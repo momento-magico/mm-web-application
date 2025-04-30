@@ -3,7 +3,7 @@ import banner from "../../public/assets/images/banner.avif";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden px-5 md-px-0">
+    <section className="relative w-full min-h-screen overflow-hidden px-8 md-px-0">
       <Header />
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

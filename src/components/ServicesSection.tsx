@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export const ServicesSection = () => {
   return (
-    <section id="events" className="relative w-full bg-[#0A0A0A] text-white pt-4 pb-50 px-5 md-px-0">
+    <section id="events" className="relative w-full bg-[#0A0A0A] text-white pt-4 pb-50 px-8 md-px-0">
       <div className="container mx-auto relative z-10">
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:mb-20">

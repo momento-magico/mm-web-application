@@ -33,7 +33,7 @@ export const Footer = () => {
     }
   };
   return (
-    <footer className="bg-[#0A0A0A] text-white py-8 md:py-20  px-5 md-px-0">
+    <footer className="bg-[#0A0A0A] text-white py-8 md:py-20  px-8 md-px-0">
       <ChatButton />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

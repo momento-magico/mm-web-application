@@ -23,9 +23,9 @@ export default function RootLayout({
               name: "Momento Magico",
               url: "https://momentomagico.lk",
               sameAs: [
-                "https://www.instagram.com/momentomagico",
-                "https://www.facebook.com/momentomagico",
-                "https://www.youtube.com/@momentomagico",
+                "https://www.instagram.com/momentomagico.lk",
+                "https://www.facebook.com/momentomagico.lk",
+                "https://www.youtube.com/@momentomagico.lk",
               ],
             }),
           }}

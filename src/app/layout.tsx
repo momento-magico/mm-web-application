@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Momento Magico | Progressive Music Events Sri Lanka",
-  description:
-    "Momento Magico curates unforgettable progressive music experiences in Sri Lanka, uniting international and local artists on one immersive stage.",
+  title: "Momento Magico",
+  description: "Crafting unforgettable experiences through progressive music and immersive events. We bring global and local talent together to create magical moments that move minds and hearts.",
 };
 
 export default function RootLayout({
@@ -15,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -25,14 +23,14 @@ export default function RootLayout({
               name: "Momento Magico",
               url: "https://momentomagico.lk",
               sameAs: [
-                "https://www.instagram.com/momentomagico",
-                "https://www.facebook.com/momentomagico",
-                "https://www.youtube.com/@momentomagico",
+                "https://www.instagram.com/momentomagico.lk",
+                "https://www.facebook.com/momentomagico.lk",
+                "https://www.youtube.com/@momentomagico.lk",
               ],
             }),
           }}
         />
-      </Head>
+      </head>
       <body>{children}</body>
     </html>
   );

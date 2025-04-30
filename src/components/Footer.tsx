@@ -1,6 +1,7 @@
 "use client";
 
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import Link from "next/link";
 import { useRef } from "react";
 const SENDER_EMAIL = "info@momentomagico.lk";
 export const Footer = () => {
@@ -23,7 +24,7 @@ export const Footer = () => {
 
       const a = document.createElement("a");
       a.href = mailtoLink;
-      a.click(); 
+      a.click();
       a.remove();
       if (nameRef.current) nameRef.current.value = "";
       if (emailRef.current) emailRef.current.value = "";
@@ -46,30 +47,27 @@ export const Footer = () => {
             </p>
             {/* Social Icons */}
             <div className="flex space-x-6">
-              <a
-                href="#"
+              <Link
+                href="https://facebook.com/momentomagico.lk"
+                target="_blank"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
               >
                 <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.instagram.com/momentomagico.lk"
+                target="_blank"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.youtube.com"
+                target="_blank"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
               >
                 <Youtube size={20} />
-              </a>
+              </Link>
             </div>
           </div>
           {/* Right Form */}

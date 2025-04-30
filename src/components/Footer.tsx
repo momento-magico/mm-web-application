@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import ChatButton from "./ChatButton";

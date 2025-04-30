@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MessageCircle, X, MessageSquare, Instagram } from "lucide-react";
+import { MessageCircle, X } from "lucide-react";
 const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleChat = () => {

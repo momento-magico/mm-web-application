@@ -5,7 +5,6 @@ import redbull from "../../public/assets/images/redbull.webp";
 import bacadi from "../../public/assets/images/baca.webp";
 import dist from "../../public/assets/images/dist.png";
 import lion from "../../public/assets/images/lion.png";
-import asian from "../../public/assets/images/asian.png";
 import Image from "next/image";
 
 export const ServicesSection = () => {
@@ -85,9 +84,9 @@ export const ServicesSection = () => {
           <div className=" h-24 w-48">
             <Image src={lion} alt="lion" className="h-24 object-contain" />
           </div>
-          <div className=" h-36 w-48">
+          {/* <div className=" h-36 w-48">
             <Image src={asian} alt="Asian" className="h-36 object-contain" />
-          </div>
+          </div> */}
           {/* <div className=" h-16 w-48">
             <Image src={sun} alt="Sun FM" className="h-16 object-contain" />
           </div> */}

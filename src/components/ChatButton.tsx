@@ -17,7 +17,7 @@ const ChatButton = () => {
       >
         {/* WhatsApp */}
         <a
-          href="https://wa.me/+94771234567"
+          href="https://wa.me/+94775938851"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center bg-green-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-green-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-900/30"
@@ -58,7 +58,7 @@ const ChatButton = () => {
         </a>
         {/* Messenger */}
         <a
-          href="https://m.me/momentomagico"
+          href="https://m.me/momentomagico.lk"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center bg-blue-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-blue-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-blue-900/30"
@@ -99,7 +99,7 @@ const ChatButton = () => {
         </a>
         {/* Instagram */}
         <a
-          href="https://instagram.com/direct/t/momentomagico"
+          href="https://instagram.com/direct/t/momentomagico.lk"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-purple-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-purple-900/30"

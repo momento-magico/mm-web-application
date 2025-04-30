@@ -3,7 +3,7 @@ import banner from "../../public/assets/images/banner.avif";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden px-8 md-px-0">
+    <section className="relative w-full h-[calc(100vh-80px)] md:min-h-screen overflow-hidden px-8 md:px-0">
       <Header />
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -11,12 +11,13 @@ export const HeroSection = () => {
         <Image
           src={banner}
           fill
+          priority
           alt="Concert stage with blue lights"
           className="w-full h-full object-cover"
         />
       </div>
       {/* Large Momento Magico Text */}
-      <div className="relative z-20 pt-16 md:pt-32">
+      <div className="relative z-20 pt-8 md:pt-32">
         <h1 className="text-[120px] font-light text-white/20 tracking-widest uppercase text-center leading-none">
           Momento
           <br />
@@ -31,13 +32,13 @@ export const HeroSection = () => {
             <br />
             Art & Good Vibes with Great People.
           </h2>
-          <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-16">
+          <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-8 md:mb-16">
             {`From intimate gatherings to grand celebrations, we bring your vision
             to life with immersive planning, stunning design, and unforgettable
             experiences. Let's create something extraordinary together.`}
           </p>
           {/* Vertical Line */}
-          <div className="w-[2px] h-20 max-h-32 bg-white/50 mx-auto"></div>
+          <div className="w-[2px] h-15 md:h-20 max-h-32 bg-white/50 mx-auto"></div>
         </div>
       </div>
     </section>

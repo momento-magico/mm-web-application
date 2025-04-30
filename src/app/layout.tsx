@@ -13,6 +13,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Momento Magico",
+              url: "https://momentomagico.lk",
+              sameAs: [
+                "https://www.instagram.com/momentomagico",
+                "https://www.facebook.com/momentomagico",
+                "https://www.youtube.com/@momentomagico",
+              ],
+            }),
+          }}
+        />
+      </Head>
       <body>{children}</body>
     </html>
   );

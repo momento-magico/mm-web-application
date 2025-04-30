@@ -89,9 +89,9 @@ export const ServicesSection = () => {
           <div className=" h-36 w-48">
             <Image src={asian} alt="Asian" className="h-36 object-contain" />
           </div>
-          <div className=" h-16 w-48">
+          {/* <div className=" h-16 w-48">
             <Image src={sun} alt="Sun FM" className="h-16 object-contain" />
-          </div>
+          </div> */}
         </div>
         <hr className="h-px mb-8 md:mb-0 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}

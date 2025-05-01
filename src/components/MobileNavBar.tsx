@@ -7,7 +7,7 @@ export function MobileNavbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="md:hidden fixed top-4 left-0 right-0  shadow-md z-50">
+    <nav className="md:hidden absolute top-4 left-0 right-0  shadow-md z-50">
       <div className="flex items-center justify-end px-4 py-3">
         <button
           onClick={toggleMenu}
@@ -16,14 +16,14 @@ export function MobileNavbar() {
           aria-label="Toggle menu"
         >
           {isOpen ? (
-            <X className="h-6 w-6" color="white" />
+            <X className=" absolute right-6 h-6 w-6 z-99" color="white" />
           ) : (
             <Menu className="h-6 w-6" color="white" />
           )}
         </button>
       </div>
       {isOpen && (
-        <div className=" px-4 py-2 pb-4 bg-[#0A0A0A]/30 text-white">
+        <div className=" absolute top-0 right-0 left-0 pt-18 px-4 py-2 pb-4 bg-[#0A0A0A]/50 text-white">
           <ul className="space-y-2">
             <li className="flex justify-end">
               <Link

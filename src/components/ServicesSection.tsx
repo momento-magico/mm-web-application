@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { Music, Disc, Radio } from "lucide-react";
 import { CountdownTimer } from "./CountdownTimer";
 import redbull from "../../public/assets/images/redbull.webp";
@@ -6,8 +7,62 @@ import bacadi from "../../public/assets/images/baca.webp";
 import dist from "../../public/assets/images/dist.png";
 import lion from "../../public/assets/images/lion.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const ServicesSection = () => {
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  // const itemVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     y: 20,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 100,
+  //       damping: 10,
+  //     },
+  //   },
+  // };
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+  };
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.3, // delay between items
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
   return (
     <section
       id="events"
@@ -15,10 +70,19 @@ export const ServicesSection = () => {
     >
       <div className="container mx-auto relative z-10">
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:mb-20">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 md:mb-20"
+        >
           {/* Music Events & Festivals */}
-          <div className="text-left backdrop-blur-sm rounded-lg">
-            <div className=" mb-6">
+          <motion.div
+            variants={item}
+            className="text-left backdrop-blur-sm rounded-lg"
+          >
+            <div className="mb-6">
               <Music size={32} className="text-white" />
             </div>
             <h3 className="text-xl font-light mb-4">Music event & festivals</h3>
@@ -30,9 +94,10 @@ export const ServicesSection = () => {
               jam or a multi-day festival, we're all about turning up the volume
               on what's possible.`}
             </p>
-          </div>
+          </motion.div>
+
           {/* DJ, Electronic Music Concerts */}
-          <div className="backdrop-blur-sm rounded-lg">
+          <motion.div variants={item} className="backdrop-blur-sm rounded-lg">
             <div className="mb-6">
               <Disc size={32} className="text-white" />
             </div>
@@ -47,9 +112,10 @@ export const ServicesSection = () => {
               you're here for the rhythm, the lights, or the vibe - something
               bigger now.`}
             </p>
-          </div>
+          </motion.div>
+
           {/* Classical Performances */}
-          <div className="backdrop-blur-sm rounded-lg">
+          <motion.div variants={item} className="backdrop-blur-sm rounded-lg">
             <div className="mb-6">
               <Radio size={32} className="text-white" />
             </div>
@@ -64,8 +130,8 @@ export const ServicesSection = () => {
               flawless production to create experiences that resonate long after
               the final bow.`}
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         {/* Sponsors Row */}
         <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 md:mt-32 md:mb-8 md:mr-8">
           <div className=" h-12 w-48">
@@ -94,7 +160,6 @@ export const ServicesSection = () => {
         <hr className="h-px mb-8 md:mb-0 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}
         <CountdownTimer />
-        {/* Event Card */}
         <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div>
       </div>
     </section>

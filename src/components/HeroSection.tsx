@@ -43,7 +43,7 @@ const HeroSection = () => {
         </h1>
       </div>
       {/* Content */}
-      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center md:pt-24">
+      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center md:pt-24 md:pb-16">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -66,7 +66,7 @@ const HeroSection = () => {
             experiences. Let's create something extraordinary together.`}
           </motion.p>
           {/* Vertical Line */}
-          <div className="w-[2px] h-15 md:h-20 max-h-32 bg-white/50 mx-auto"></div>
+          <div className="w-[2px] h-15 md:h-24 max-h-32 bg-white/50 mx-auto"></div>
         </motion.div>
       </div>
     </section>

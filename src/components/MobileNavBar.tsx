@@ -7,7 +7,7 @@ export function MobileNavbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="md:hidden fixed top-0 left-0 right-0  shadow-md z-50">
+    <nav className="md:hidden fixed top-4 left-0 right-0  shadow-md z-50">
       <div className="flex items-center justify-end px-4 py-3">
         <button
           onClick={toggleMenu}

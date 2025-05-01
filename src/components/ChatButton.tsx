@@ -6,7 +6,7 @@ const ChatButton = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="fixed bottom-12 md:bottom-6 right-6 z-50 ">
+    <div className="fixed bottom-18 md:bottom-6 right-6 z-50 ">
       {/* Social Options */}
       <div
         className={`flex flex-col-reverse gap-3 mb-3 transition-all duration-500 ease-in-out ${
@@ -99,7 +99,7 @@ const ChatButton = () => {
         </a>
         {/* Instagram */}
         <a
-          href="https://instagram.com/direct/t/momentomagico.lk"
+          href="https://ig.me/m/momentomagico.lk"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-purple-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-purple-900/30"

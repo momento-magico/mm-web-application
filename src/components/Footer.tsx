@@ -9,7 +9,7 @@ export const Footer = () => {
       <ChatButton />
       <div className="container mx-auto">
         {/* Bottom Section */}
-        <div className="pt-6 border-t border-white/10 text-center text-[8px] md:text-sm text-white">
+        <div className="pt-6 md:border-t md:border-white/10 text-center text-[6px] md:text-sm text-white">
           <p className="flex items-center justify-center space-x-4">
             <span>©2025 MOMENTO MAGICO</span>
             <span>•</span>

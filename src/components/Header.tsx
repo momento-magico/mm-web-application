@@ -9,7 +9,7 @@ export const Header = () => {
         <Link href="/">
           <Image
             src={logo}
-            className="w-12 h-12 md:w-16 md:h-16 object-cover"
+            className=" absolute w-12 h-12 md:w-16 md:h-16 object-cover z-99"
             sizes="(max-width: 50px) 100vw, (max-width: 1200px) 50vw, 33vw"
             alt={"Momento Magico logo"}
           />

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.png";
 import Link from "next/link";
+import { MobileNavbar } from "./MobileNavBar";
 export const Header = () => {
   return (
     <header className="absolute top-2 left-0 w-full z-50 p-8">
@@ -14,6 +15,7 @@ export const Header = () => {
           />
         </Link>
         <nav>
+          <MobileNavbar />
           <ul className=" space-x-8 hidden md:flex">
             <li>
               <Link

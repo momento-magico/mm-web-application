@@ -1,6 +1,6 @@
 "use client";
 
-
+import Link from "next/link";
 import ChatButton from "./ChatButton";
 
 export const Footer = () => {
@@ -13,13 +13,19 @@ export const Footer = () => {
           <p className="flex items-center justify-center space-x-4">
             <span>©2025 MOMENTO MAGICO</span>
             <span>•</span>
-            <a href="terms-conditions" className="hover:text-white transition-colors">
+            <Link
+              href="terms-conditions"
+              className="hover:text-white transition-colors"
+            >
               TERMS & CONDITIONS
-            </a>
+            </Link>
             <span>•</span>
-            <a href="/privacy-policy" className="hover:text-white transition-colors">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-white transition-colors"
+            >
               PRIVACY POLICY
-            </a>
+            </Link>
           </p>
         </div>
       </div>

@@ -66,7 +66,12 @@ const HeroSection = () => {
             experiences. Let's create something extraordinary together.`}
           </motion.p>
           {/* Vertical Line */}
-          <div className="w-[2px] h-15 md:h-24 max-h-32 bg-white/50 mx-auto"></div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="w-[2px] h-15 md:h-24 max-h-32 bg-white/50 mx-auto"
+          />
         </motion.div>
       </div>
     </section>

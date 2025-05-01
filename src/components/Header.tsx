@@ -20,7 +20,7 @@ export const Header = () => {
             <li>
               <Link
                 href="/"
-                className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
+                className="text-white text-md uppercase underline tracking-widest hover:opacity-70 transition-opacity"
               >
                 Events
               </Link>
@@ -28,7 +28,7 @@ export const Header = () => {
             <li>
               <Link
                 href="/about"
-                className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
+                className="text-white text-md uppercase underline tracking-widest hover:opacity-70 transition-opacity"
               >
                 About
               </Link>
@@ -36,7 +36,7 @@ export const Header = () => {
             <li>
               <Link
                 href="/#contact"
-                className="text-white text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
+                className="text-white text-md uppercase underline tracking-widest hover:opacity-70 transition-opacity"
               >
                 Contact
               </Link>

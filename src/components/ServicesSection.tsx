@@ -85,8 +85,8 @@ export const ServicesSection = () => {
             <div className="mb-6">
               <Music size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-light mb-4">Music event & festivals</h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <h3 className="text-2xl font-light mb-4">Music event & festivals</h3>
+            <p className="text-md text-gray-400 leading-relaxed">
               {`We specialize in creating epic music events and festivals that
               move people literally and emotionally. From booming beats to
               flawless logistics, we fuel creativity, culture, and crowd energy
@@ -101,10 +101,10 @@ export const ServicesSection = () => {
             <div className="mb-6">
               <Disc size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-light mb-4">
+            <h3 className="text-2xl font-light mb-4">
               DJ, Electronic music concerts
             </h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-md text-gray-400 leading-relaxed">
               {`We don't just throw events; we create moments that move you. From
               heart-pounding drops to hands in the air anthems, every beat when
               it counts to make your soul just ignite the crowd. It's a
@@ -119,10 +119,10 @@ export const ServicesSection = () => {
             <div className="mb-6">
               <Radio size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-light mb-4">
+            <h3 className="text-2xl font-light mb-4">
               Classical performances concerts
             </h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-md text-gray-400 leading-relaxed">
               {`We don't just present concerts; we curate unforgettable musical
               journeys. From the delicate whisper of strings to the powerful
               swell of a full orchestra, every note tonight's designed to stir
@@ -133,7 +133,7 @@ export const ServicesSection = () => {
           </motion.div>
         </motion.div>
         {/* Sponsors Row */}
-        <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 md:mt-32 md:mb-8 md:mr-8">
+        <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 my-4 md:mt-32 md:mb-8 md:mr-8">
           <div className=" h-12 w-48">
             <Image
               src={redbull}
@@ -157,7 +157,7 @@ export const ServicesSection = () => {
             <Image src={sun} alt="Sun FM" className="h-16 object-contain" />
           </div> */}
         </div>
-        <hr className="h-px mb-8 md:mb-0 md:my-16 bg-white/10 border-0" />
+        <hr className="h-px mb-8 md:mb-8 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}
         <CountdownTimer />
         <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div>

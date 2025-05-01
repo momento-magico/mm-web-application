@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Afacad } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -6,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "Crafting unforgettable experiences through progressive music and immersive events. We bring global and local talent together to create magical moments that move minds and hearts.",
 };
+
+const afacad = Afacad({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // add needed weights
+  variable: "--font-afacad", // optional for Tailwind CSS integration
+});
 
 export default function RootLayout({
   children,
@@ -32,7 +39,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body className={afacad.className}>{children}</body>
     </html>
   );
 }

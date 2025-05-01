@@ -19,7 +19,7 @@ export const DreamSection = () => {
           <h2 className="text-2xl md:text-3xl font-light mb-8 tracking-wide">
             The Dream Behind the Beat
           </h2>
-          <p className="text-sm md:text-md text-gray-300 leading-relaxed">
+          <p className="text-md md:text-md text-gray-300 leading-relaxed">
             {`Dreamland isn't just an event it's a movement born from sound,
             light, and the collective heartbeat of dreamers. Founded with a
             vision to create an immersive escape where music and imagination

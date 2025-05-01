@@ -39,7 +39,7 @@ export const ContactUs = () => {
         {/* Left Content */}
         <div>
           <h2 className=" text-3xl md:text-4xl font-light mb-6">{`Let's Make Magic`}</h2>
-          <p className="text-gray-400 mb-12 max-w-md text-sm">
+          <p className="text-gray-400 mb-12 max-w-md text-md">
             {`Got questions, ideas, or just want to say hey? We'd love to hear
         from you. Whether you're a fan, artist, vendor, or fellow dreamer,
         Dreamland is all about connection. Drop us a message and let's

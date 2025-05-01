@@ -47,10 +47,10 @@ const HeroSection = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          className="max-w-3xl text-center text-white"
+          className="max-w-4xl text-center text-white"
         >
           <motion.h2
-            className="text-2xl md:text-4xl font-light mb-4"
+            className="text-3xl md:text-5xl font-light mb-4 "
             variants={itemVariants}
           >
             Creating Magical Moments Through Music,
@@ -59,7 +59,7 @@ const HeroSection = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-sm text-gray-300 max-w-2xl mx-auto mb-8 md:mb-16"
+            className="text-md text-gray-300 max-w-2xl mx-auto mb-8 md:mb-16"
           >
             {`From intimate gatherings to grand celebrations, we bring your vision
             to life with immersive planning, stunning design, and unforgettable

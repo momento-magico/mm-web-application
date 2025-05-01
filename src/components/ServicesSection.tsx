@@ -10,46 +10,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const ServicesSection = () => {
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-  // const itemVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     y: 20,
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: {
-  //       type: "spring",
-  //       stiffness: 100,
-  //       damping: 10,
-  //     },
-  //   },
-  // };
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-      scale: 0.95,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-      },
-    },
-  };
   const container = {
     hidden: {},
     show: {
@@ -85,7 +45,9 @@ export const ServicesSection = () => {
             <div className="mb-6">
               <Music size={32} className="text-white" />
             </div>
-            <h3 className="text-2xl font-light mb-4">Music event & festivals</h3>
+            <h3 className="text-2xl font-light mb-4">
+              Music event & festivals
+            </h3>
             <p className="text-md text-gray-400 leading-relaxed">
               {`We specialize in creating epic music events and festivals that
               move people literally and emotionally. From booming beats to

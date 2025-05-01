@@ -33,10 +33,10 @@ const PrivacyPolicyPage = () => {
         </p>
 
         <p>
-          Momento Magico (Pvt) Ltd. ("we", "us", or "our") is committed to
+          {` Momento Magico (Pvt) Ltd. ("we", "us", or "our") is committed to
           protecting your privacy. This Privacy Policy explains how we collect,
           use, and protect your information when you interact with us, whether
-          through our website, social media, or event registrations.
+          through our website, social media, or event registrations.`}
         </p>
 
         {/* Section 1 */}

@@ -3,6 +3,7 @@
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const SENDER_EMAIL = "info@momentomagico.lk";
 export const ContactUs = () => {
@@ -34,8 +35,12 @@ export const ContactUs = () => {
   };
   return (
     <div className="bg-[#0A0A0A] text-white py-8 md:py-20  px-8 md:px-32">
-      {" "}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-16 "
+      >
         {/* Left Content */}
         <div>
           <h2 className=" text-3xl md:text-4xl font-light mb-6">{`Let's Make Magic`}</h2>
@@ -132,7 +137,7 @@ export const ContactUs = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

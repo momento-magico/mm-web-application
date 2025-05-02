@@ -2,6 +2,7 @@
 
 import { Header } from "./Header";
 import banner from "../../public/assets/images/banner.avif";
+import animatedText from "../../public/assets/images/text_animation.gif";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const HeroSection = () => {
@@ -23,9 +24,20 @@ const HeroSection = () => {
   return (
     <section className="relative w-full h-[calc(100vh-80px)] md:min-h-screen overflow-hidden px-8 md:px-0">
       <Header />
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/50 to-[#0A0A0A]/100 z-10" />
+        <div className=" absolute w-screen h-full -top-32 z-1">
+          <Image
+            src={animatedText}
+            fill
+            priority
+            alt="text"
+            className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
         <Image
           src={banner}
           fill
@@ -35,15 +47,18 @@ const HeroSection = () => {
         />
       </div>
       {/* Large Momento Magico Text */}
-      <div className="relative z-20 pt-8 md:pt-32">
-        <h1 className="text-[120px] font-light text-white/20 tracking-widest uppercase text-center leading-none">
-          Momento
-          <br />
-          Magico
-        </h1>
-      </div>
+      {/* <div className="relative top-0 h-[800px] z-20 pt-8 md:pt-32 bg-transparent">
+        <Image
+          src={animatedText}
+          fill
+          priority
+          alt="text"
+          className="w-full h-full object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div> */}
       {/* Content */}
-      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center md:pt-24 md:pb-16">
+      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-130 md:pt-200 md:pb-16">
         <motion.div
           initial="hidden"
           animate="visible"

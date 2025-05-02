@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { MessageCircle, Plus } from "lucide-react";
 const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleChat = () => {
@@ -150,7 +150,7 @@ const ChatButton = () => {
         aria-label={isOpen ? "Close chat options" : "Open chat options"}
       >
         {isOpen ? (
-          <X size={24} className="text-white" />
+          <Plus size={24} className="text-white" />
         ) : (
           <MessageCircle size={24} className="text-white" />
         )}

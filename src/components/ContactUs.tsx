@@ -22,7 +22,7 @@ export const ContactUs = () => {
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
       );
-      const mailtoLink = `mailto:${SENDER_EMAIL}?subject=${subject}&body=${body}`;
+      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${SENDER_EMAIL}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
       const a = document.createElement("a");
       a.href = mailtoLink;

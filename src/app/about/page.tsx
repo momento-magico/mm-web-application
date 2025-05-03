@@ -106,7 +106,12 @@ const AboutPage = () => {
       </section>
 
       {/* Content Section */}
-      <section className="container mx-auto px-6 md:px-0 pb-32">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="container mx-auto px-6 md:px-0 pb-32"
+      >
         <div className="bg-white/5 backdrop-blur-md rounded-2xl p-10 md:p-16 max-w-5xl mx-auto space-y-20 border border-white/10">
           {/* What is Momento Magico */}
           <div>
@@ -142,7 +147,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.div>
 
       <Footer />
     </main>

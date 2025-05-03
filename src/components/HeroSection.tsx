@@ -28,13 +28,13 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/50 to-[#0A0A0A]/100 z-10" />
-        <div className=" absolute w-screen h-full -top-32 z-1">
+        <div className=" absolute w-screen h-195 top-0 z-1 inert:0 ml-8">
           <Image
             src={animatedText}
             fill
             priority
             alt="text"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-70"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>

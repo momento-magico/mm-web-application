@@ -45,7 +45,7 @@ export function MobileNavbar() {
             </li>
             <li className="flex justify-end">
               <Link
-                href="#contact"
+                href="/#contact"
                 className="block py-2 px-4 text-lg rounded-md hover:bg-secondary transition-colors"
                 onClick={() => setIsOpen(false)}
               >

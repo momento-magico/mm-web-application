@@ -26,6 +26,7 @@ export const ContactUs = () => {
 
       const a = document.createElement("a");
       a.href = mailtoLink;
+      a.target = "_blank"
       a.click();
       a.remove();
       if (nameRef.current) nameRef.current.value = "";

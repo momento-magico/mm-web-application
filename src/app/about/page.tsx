@@ -85,7 +85,7 @@ const AboutPage = () => {
 
       <div className="">
         {/* Hero Spacer + Headline */}
-        <section className=" absolute inert:0 w-screen top-32 text-center z-10">
+        <section className=" absolute inert:0 w-screen top-32 text-center z-10 pr-8 md:pr-2">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

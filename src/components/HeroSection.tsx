@@ -45,7 +45,7 @@ const HeroSection = () => {
             fill
             priority
             alt="text"
-            className="w-full h-full object-cover opacity-70 px-8"
+            className="w-full h-full object-cover opacity-75 px-4"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>

@@ -5,6 +5,10 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Momento Magico",
+  applicationName: "Momento Magico",
+  keywords: ["Entertainment", "Event", "Music", "Sri Lanka"],
+  publisher: "Momento Magico",
+  category: "Entertainment",
   description:
     "Crafting unforgettable experiences through progressive music and immersive events. We bring global and local talent together to create magical moments that move minds and hearts.",
 };
@@ -41,7 +45,10 @@ export default function RootLayout({
         />
       </head>
       <body className={afacad.className}>{children}</body>
-      <div className=" relative bottom-0 z-20"> <Footer /></div>
+      <div className=" relative bottom-0 z-20">
+        {" "}
+        <Footer />
+      </div>
     </html>
   );
 }

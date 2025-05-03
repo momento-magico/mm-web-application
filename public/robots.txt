@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.momentomagico.lk
+
+# Sitemaps
+Sitemap: https://www.momentomagico.lk/sitemap.xml

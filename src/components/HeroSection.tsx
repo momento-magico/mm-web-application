@@ -3,6 +3,7 @@
 import { Header } from "./Header";
 import banner from "../../public/assets/images/banner.avif";
 import animatedText from "../../public/assets/images/text_animation.gif";
+import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const HeroSection = () => {
@@ -22,19 +23,29 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[calc(100vh-80px)] md:min-h-screen overflow-hidden px-8 md:px-0">
+    <section className="relative w-full h-[calc(100vh-180px)] md:min-h-screen overflow-hidden px-8 md:px-0">
       <Header />
 
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/50 to-[#0A0A0A]/100 z-10" />
-        <div className=" absolute w-screen h-195 top-0 z-1 inert:0 ml-8">
+      <div className="absolute inset-0 -top-20 md:top-0 z-0">
+        <div className="absolute inset-0  bg-gradient-to-b from-[#0A0A0A]/50 to-[#0A0A0A]/100 z-10" />
+        <div className=" absolute w-screen h-195 top-0 z-1 inert:0 ml-8 hidden md:block">
           <Image
             src={animatedText}
             fill
             priority
             alt="text"
             className="w-full h-full object-cover opacity-70"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+        <div className=" absolute w-screen h-40 top-48 z-1 inert:0 block md:hidden">
+          <Image
+            src={animatedMobilText}
+            fill
+            priority
+            alt="text"
+            className="w-full h-full object-cover opacity-70 px-8"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
@@ -46,19 +57,8 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      {/* Large Momento Magico Text */}
-      {/* <div className="relative top-0 h-[800px] z-20 pt-8 md:pt-32 bg-transparent">
-        <Image
-          src={animatedText}
-          fill
-          priority
-          alt="text"
-          className="w-full h-full object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div> */}
       {/* Content */}
-      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-130 md:pt-200 md:pb-16">
+      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-75 md:pt-200 md:pb-16">
         <motion.div
           initial="hidden"
           animate="visible"

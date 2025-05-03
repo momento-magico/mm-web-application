@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Afacad } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Momento Magico",
@@ -40,6 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body className={afacad.className}>{children}</body>
+      <div className=" relative bottom-0 z-20"> <Footer /></div>
     </html>
   );
 }

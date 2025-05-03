@@ -73,7 +73,7 @@ const AboutPage = () => {
       <Header />
 
       {/* Background Image with Overlay */}
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 z-0">
         <Image
           src={banner}
           fill
@@ -84,72 +84,72 @@ const AboutPage = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/90 backdrop-blur-sm" />
       </div>
 
-      {/* Hero Spacer + Headline */}
-      <section className="pt-40 md:pt-60 pb-20 text-center">
-        <motion.h1
+      <div className="">
+        {/* Hero Spacer + Headline */}
+        <section className=" absolute inert:0 w-screen top-32 text-center z-10">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl md:text-7xl font-light text-white/20 uppercase tracking-wider"
+          >
+            About Us
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            className="text-white/70 mt-6 text-lg md:text-xl max-w-3xl mx-auto font-light"
+          >
+            Discover the story behind Momento Magico and why we’re shaping the
+            next chapter of progressive music in Asia.
+          </motion.p>
+        </section>
+        {/* Content Section */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-light text-white/20 uppercase tracking-wider"
+          className="container mx-auto px-6 md:px-0 pb-12 md:pb-32 mt-90"
         >
-          About Us
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="text-white/70 mt-6 text-lg md:text-xl max-w-3xl mx-auto font-light"
-        >
-          Discover the story behind Momento Magico and why we’re shaping the
-          next chapter of progressive music in Asia.
-        </motion.p>
-      </section>
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-10 md:p-16 max-w-5xl mx-auto space-y-20 border border-white/10">
+            {/* What is Momento Magico */}
+            <div>
+              <h2 className="text-2xl md:text-3xl text-white uppercase tracking-wide font-light mb-4">
+                What is Momento Magico?
+              </h2>
+              <p className="text-white/80 text-lg leading-relaxed font-light">
+                Momento Magico is Sri Lanka’s first immersive music experience
+                dedicated to progressive electronic music. More than a concert,
+                it’s a curated celebration of deep, hypnotic soundscapes that
+                transport you beyond the ordinary. Rooted in passion and built
+                on community, Momento Magico brings together the finest elements
+                of underground culture — music, unity, and artistic freedom.
+              </p>
+            </div>
 
-      {/* Content Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="container mx-auto px-6 md:px-0 pb-32"
-      >
-        <div className="bg-white/5 backdrop-blur-md rounded-2xl p-10 md:p-16 max-w-5xl mx-auto space-y-20 border border-white/10">
-          {/* What is Momento Magico */}
-          <div>
-            <h2 className="text-2xl md:text-3xl text-white uppercase tracking-wide font-light mb-4">
-              What is Momento Magico?
-            </h2>
-            <p className="text-white/80 text-lg leading-relaxed font-light">
-              Momento Magico is Sri Lanka’s first immersive music experience
-              dedicated to progressive electronic music. More than a concert,
-              it’s a curated celebration of deep, hypnotic soundscapes that
-              transport you beyond the ordinary. Rooted in passion and built on
-              community, Momento Magico brings together the finest elements of
-              underground culture — music, unity, and artistic freedom.
-            </p>
+            {/* Why We're the Future */}
+            <FeatureGrid />
+
+            {/* Call to Join */}
+            <div>
+              <h2 className="text-2xl md:text-3xl text-white uppercase tracking-wide font-light mb-4">
+                Join the Journey
+              </h2>
+              <p className="text-white/80 text-lg leading-relaxed font-light">
+                This is your invitation to be part of something truly magical.
+                Momento Magico isn’t just a festival — it’s a signal to the
+                world that Asia is ready to shape the future of progressive
+                music.
+              </p>
+              <p className="mt-6 italic text-white/60">
+                Stay tuned for announcements, behind-the-scenes content, and
+                more as we gear up for something unforgettable.
+              </p>
+            </div>
           </div>
-
-          {/* Why We're the Future */}
-          <FeatureGrid />
-
-          {/* Call to Join */}
-          <div>
-            <h2 className="text-2xl md:text-3xl text-white uppercase tracking-wide font-light mb-4">
-              Join the Journey
-            </h2>
-            <p className="text-white/80 text-lg leading-relaxed font-light">
-              This is your invitation to be part of something truly magical.
-              Momento Magico isn’t just a festival — it’s a signal to the world
-              that Asia is ready to shape the future of progressive music.
-            </p>
-            <p className="mt-6 italic text-white/60">
-              Stay tuned for announcements, behind-the-scenes content, and more
-              as we gear up for something unforgettable.
-            </p>
-          </div>
-        </div>
-      </motion.div>
-
-      <Footer />
+        </motion.div>
+      </div>
     </main>
   );
 };

@@ -5,7 +5,6 @@ import banner from "../../../public/assets/images/banner.avif";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Users, Sparkles, Music, Rocket } from "lucide-react";
-import { Footer } from "../../components/Footer";
 
 const features = [
   {

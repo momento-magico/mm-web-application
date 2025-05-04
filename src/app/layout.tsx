@@ -49,7 +49,7 @@ export default function RootLayout({
           <meta property="og:description" content="Experience Dreamland 2025 — Sri Lanka’s premier underground and progressive music event by Momento Magico. One stage. Pure energy." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.momentomagico.lk" />
-          <meta property="og:image" content="https://www.momentomagico.lk/assets/images/og-cover.jpg" />
+          <meta property="og:image" content="https://www.momentomagico.lk/assets/images/logo.png" />
           <meta property="og:site_name" content="Momento Magico" />
           <meta property="og:locale" content="en_LK" />
 
@@ -57,7 +57,7 @@ export default function RootLayout({
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Momento Magico | Dreamland 2025 - Progressive Music Festival Sri Lanka" />
           <meta name="twitter:description" content="Join Sri Lanka's most immersive electronic music experience. Dreamland 2025 by Momento Magico brings together global and local talent." />
-          <meta name="twitter:image" content="https://www.momentomagico.lk/assets/images/og-cover.jpg" />
+          <meta name="twitter:image" content="https://www.momentomagico.lk/assets/images/logo.png" />
           <meta name="twitter:site" content="@momentomagico.lk" />
 
           <script

@@ -26,7 +26,7 @@ export const ServicesSection = () => {
   return (
     <section
       id="events"
-      className="relative w-full bg-[#0A0A0A] text-white pt-4 pb-36 md:pb-50 px-8 md-px-0"
+      className="relative w-full bg-[#0A0A0A] text-white pt-12 pb-36 md:pb-50 px-8 md-px-0"
     >
       <div className="container mx-auto relative z-10">
         {/* Services Grid */}

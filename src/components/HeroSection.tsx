@@ -58,7 +58,7 @@ const HeroSection = () => {
         />
       </div>
       {/* Content */}
-      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-90 md:pt-220 md:pb-16">
+      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-100 md:pt-220 md:pb-16">
         <motion.div
           initial="hidden"
           animate="visible"

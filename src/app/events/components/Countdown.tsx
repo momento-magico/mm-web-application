@@ -30,7 +30,7 @@ export function Countdown({
     return () => clearInterval(timer);
   }, [targetDate]);
   return <div className="flex space-x-6">
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 md:gap-1 gap-4">
         <div className="flex flex-col items-center">
           <span className="text-2xl font-medium">
             {String(timeLeft.days).padStart(2, '0')}

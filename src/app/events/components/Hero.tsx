@@ -3,7 +3,7 @@ import dreamlandImage from "../../../../public/assets/images/events/dreamland.pn
 
 export function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center pt-24 pb-24 px-6">
+    <section className="flex flex-col items-center justify-center pt-24 pb-8 md:pb-24 px-6">
       <div className="logo mb-6">
         <img
           src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -25,7 +25,7 @@ export function Hero() {
         </p>
       </div>
       <div className="mt-24 h-24 w-px bg-white/30 z-50"></div>
-      <div className="absolute inset-0 w-full h-[70vh] z-2">
+      <div className="absolute inset-0 w-full h-[55vh] md:h-[70vh] z-2">
         <Image
           className="h-full w-full object-cover border-0"
           src={dreamlandImage}
@@ -35,7 +35,7 @@ export function Hero() {
         />
         {/* <img src="/4711a891b4397ca7421d5dadbde9e741ddc87a3f.png" alt="Mystical garden with statue" className="w-full h-[80vh] object-cover opacity-100" /> */}
       </div>
-      <div className="absolute inset-0 h-[70vh]  bg-gradient-to-b from-[#0A0A0A]/20 to-[#0A0A0A]/100 z-45" />
+      <div className="absolute inset-0 h-[55vh] md:h-[70vh] bg-gradient-to-b from-[#0A0A0A]/20 to-[#0A0A0A]/100 z-45" />
     </section>
   );
 }

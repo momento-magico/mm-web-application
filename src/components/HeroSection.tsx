@@ -1,7 +1,7 @@
 "use client";
 
 import { Header } from "./Header";
-import banner from "../../public/assets/images/banner.avif";
+import banner from "../../public/assets/images/hero_final.webp";
 import animatedText from "../../public/assets/images/text_animation.gif";
 import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
@@ -58,7 +58,7 @@ const HeroSection = () => {
         />
       </div>
       {/* Content */}
-      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-75 md:pt-200 md:pb-16">
+      <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-75 md:pt-220 md:pb-16">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -74,7 +74,7 @@ const HeroSection = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-md text-gray-300 max-w-2xl mx-auto mb-8 md:mb-16"
+            className="text-md text-gray-300 max-w-2xl mx-auto mb-8 md:mb-8"
           >
             {`From intimate gatherings to grand celebrations, we bring your vision
             to life with immersive planning, stunning design, and unforgettable
@@ -85,7 +85,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="w-[2px] h-15 md:h-24 max-h-32 bg-white/50 mx-auto"
+            className="w-[2px] h-15 md:h-46  bg-white/50 mx-auto"
           />
         </motion.div>
       </div>

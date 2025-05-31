@@ -7,7 +7,7 @@ export function VideoSection() {
   const handlePlayClick = () => {
     setIsPlaying(true);
   };
-  return <section className="w-full bg-black py-12 md:pb-20 px-2">
+  return <section className="w-full bg-black py-12 md:pb-20 mb-8 md:mb-0 px-2">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-2xl font-medium text-center mb-12">
           The Dream Behind the Beat
@@ -21,7 +21,7 @@ export function VideoSection() {
                 </div>
               </div>
             </> : null}
-          <video className="w-full aspect-[16/9] object-cover" poster={"/assets/images/events/event_card.png"} controls={isPlaying} playsInline>
+          <video className="w-full aspect-[16/9] object-cover" poster={"/assets/images/events/thamnail.webp"} controls={isPlaying} playsInline>
             <source src="https://firebasestorage.googleapis.com/v0/b/thakshara-3c6c3.appspot.com/o/momento%2Fdreamland_intro.mp4?alt=media&token=f901c154-3776-458d-9582-880ffc652db8" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

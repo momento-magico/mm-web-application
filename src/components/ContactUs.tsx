@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -109,6 +109,13 @@ export const ContactUs = () => {
                   </g>
                 </g>
               </svg>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/momento-magico-lk"
+              target="_blank"
+              className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
+            >
+              <Linkedin size={20} />
             </Link>
           </div>
         </div>

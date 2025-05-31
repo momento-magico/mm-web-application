@@ -19,7 +19,7 @@ export const Header = () => {
           <ul className=" space-x-8 hidden md:flex">
             <li>
               <Link
-                href="/"
+                href="/#events"
                 className="text-white text-md uppercase underline tracking-widest hover:opacity-70 transition-opacity"
               >
                 Events

@@ -1,13 +1,13 @@
 "use client";
 
 import { Music, Disc, Radio } from "lucide-react";
-import { CountdownTimer } from "./CountdownTimer";
 import redbull from "../../public/assets/images/redbull.webp";
 import bacadi from "../../public/assets/images/baca.webp";
 import dist from "../../public/assets/images/dist.png";
 import lion from "../../public/assets/images/lion.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { EventCard } from "./EventCard";
 
 export const ServicesSection = () => {
   const container = {
@@ -121,7 +121,18 @@ export const ServicesSection = () => {
         </div>
         <hr className="h-px mb-8 md:mb-8 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}
-        <CountdownTimer />
+        {/* <CountdownTimer /> */}
+        <EventCard
+          title={"DREAMLAND"}
+          ticketUrl="https://www.spotseeker.lk/event/681e040594873"
+          eventId="dreamland"
+          date={"SEPTEMBER 27, 2025"}
+          heading={"Where Dreams, Drop Beats !"}
+          description={
+            "Get ready to lose yourself in the rhythm! Dreamland is back, bringing electrifying energy, mind-blowing visuals, and the hottest EDM acts under one sky. Whether you're a seasoned raver or a first-time dreamer, this is your invitation to an unforgettable night of music, lights, and pure euphoria"
+          }
+          tagline={"Mark your calendar. Gather your crew. Let’s make dreams happen."}
+        />
         <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div>
       </div>
     </section>

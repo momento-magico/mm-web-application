@@ -37,13 +37,13 @@ export const EventCard = ({
           <Image
             src={event}
             alt="Dreamland event"
-            className="w-full h-108 object-cover rounded-xl"
+            className="w-full h-96 md:h-108 object-cover rounded-xl"
           />
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-xl" />
           <div
             id="events"
-            className="absolute bottom-8 left-8 right-8 flex justify-between items-center"
+            className="absolute bottom-8 md:top-auto top-8 left-8 right-8 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center"
           >
             <div>
               <h3 className="text-4xl font-light mb-2">{title}</h3>

@@ -65,7 +65,7 @@ export function Hero() {
           experiences. Let's create something extraordinary together.`}
         </motion.p>
       </div>
-      <div className="mt-12 md:mt:24 h-16 md:h-24 w-px bg-white/30 z-50"></div>
+      <div className="mt-12 md:mt-24 h-16 md:h-24 w-px bg-white/30 z-50"></div>
       <div className="absolute inset-0 w-full h-[55vh] md:h-[70vh] z-2">
         <Image
           className="h-full w-full object-cover border-0"

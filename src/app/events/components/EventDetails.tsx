@@ -1,4 +1,4 @@
-import eventImage from "../../../../public/assets/images/events/event_card.png";
+import eventImage from "../../../../public/assets/images/events/about.webp";
 export function EventDetails() {
   return (
     <section className="w-full bg-gradient-to-b from-transparent via-black/95 to-black py-12 md:py-24  px-2">

@@ -1,7 +1,7 @@
 "use client";
 
 import { Header } from "./Header";
-import banner from "../../public/assets/images/hero_final.webp";
+import banner from "../../public/assets/images/banner.avif";
 import animatedText from "../../public/assets/images/text_animation.gif";
 import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
@@ -85,7 +85,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="w-[2px] h-15 md:h-46  bg-white/50 mx-auto"
+            className="w-[2px] h-15 md:h-60  bg-white/50 mx-auto"
           />
         </motion.div>
       </div>

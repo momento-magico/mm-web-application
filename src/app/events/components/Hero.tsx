@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dreamlandImage from "../../../../public/assets/images/events/dreamland.png";
+import dreamlandImage from "../../../../public/assets/images/events/hero_final.webp";
 
 export function Hero() {
   return (

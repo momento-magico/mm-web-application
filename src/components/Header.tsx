@@ -45,6 +45,7 @@ export const Header = () => {
         </nav>
       </div>
       <meta name="facebook-domain-verification" content="nqavpviwcplxpfh2q3o6jlvqbbr6w7" />
+      <meta name="google-site-verification" content="VS-25ogU8j0SWWgWgQRVlRXV8rbGTCk2KcSdN_5yi68" />
     </header>
   );
 };

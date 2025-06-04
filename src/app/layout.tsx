@@ -90,7 +90,7 @@ export default function RootLayout({
                     "https://www.facebook.com/momentomagico.lk",
                     "https://www.instagram.com/momentomagico.lk",
                     "https://www.tiktok.com/@momentomagico.lk",
-                    "https://www.youtube.com/@MomentoMagico-lk"
+                    "https://www.youtube.com/@MomentoMagico-lk",
                     "https://www.linkedin.com/company/momento-magico-lk"
                 ],
                 "contactPoint": {

@@ -60,6 +60,9 @@ export default function RootLayout({
           <meta name="twitter:image" content="https://www.momentomagico.lk/assets/images/logo.png" />
           <meta name="twitter:site" content="@momentomagico.lk" />
 
+          <!-- Canonical URL -->
+          <link rel="canonical" href="https://www.momentomagico.lk">
+
           <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -88,6 +91,7 @@ export default function RootLayout({
                     "https://www.instagram.com/momentomagico.lk",
                     "https://www.tiktok.com/@momentomagico.lk",
                     "https://www.youtube.com/@MomentoMagico-lk"
+                    "https://www.linkedin.com/company/momento-magico-lk"
                 ],
                 "contactPoint": {
                     "@type": "ContactPoint",

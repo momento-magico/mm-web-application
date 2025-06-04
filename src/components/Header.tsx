@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MobileNavbar } from "./MobileNavBar";
 export const Header = () => {
   return (
-    <header className="absolute top-2 left-0 w-full z-50 p-8 bg-[#0A0A0A]/40 md:h-32">
+    <header className="absolute top-2 left-0 w-full z-50 p-8  md:h-32">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className=" mb-8">
           <Image
@@ -19,7 +19,7 @@ export const Header = () => {
           <ul className=" space-x-8 hidden md:flex">
             <li>
               <Link
-                href="/"
+                href="/#events"
                 className="text-white text-md uppercase underline tracking-widest hover:opacity-70 transition-opacity"
               >
                 Events

@@ -27,7 +27,7 @@ export function MobileNavbar() {
           <ul className="space-y-2">
             <li className="flex justify-end">
               <Link
-                href="/"
+                href="/#events"
                 className="block py-2 px-4 text-lg rounded-md hover:bg-secondary transition-colors"
                 onClick={() => setIsOpen(false)}
               >

@@ -1,7 +1,7 @@
 "use client";
 
 import { Header } from "../../components/Header";
-import banner from "../../../public/assets/images/banner.avif";
+import banner from "../../../public/assets/images/banner.avif"
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Users, Sparkles, Music, Rocket } from "lucide-react";

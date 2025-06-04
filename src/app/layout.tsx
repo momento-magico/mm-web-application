@@ -119,11 +119,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={afacad.className}>{children}</body>
-      <div className=" relative bottom-0 z-20">
-        {" "}
-        <Footer />
-      </div>
+      <body className={afacad.className}>
+        {children}
+        <div className="relative bottom-0 z-20">
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

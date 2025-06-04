@@ -1,3 +1,9 @@
+"use client";
+
+import Image from "next/image";
+import event from "../../public/assets/images/event.png";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface EventCardProps {
   title: string;
@@ -5,7 +11,8 @@ interface EventCardProps {
   heading: string;
   description: string;
   tagline: string;
-  image: string;
+  eventId: string;
+  ticketUrl: string;
 }
 export const EventCard = ({
   title,
@@ -13,8 +20,10 @@ export const EventCard = ({
   heading,
   description,
   tagline,
-  image,
+  eventId,
+  ticketUrl,
 }: EventCardProps) => {
+  const router = useRouter();
   return (
     <div className="relative mt-8 mb-8 rounded-xl overflow-hidden">
       <h2 className="text-xl md:text-2xl font-light mb-8 md:mb-12 text-left">
@@ -25,25 +34,35 @@ export const EventCard = ({
       <div className="grid md:grid-cols-2 gap-8 mb-6">
         {/* Left - Image */}
         <div className="relative">
-          <img
-            src={image}
+          <Image
+            src={event}
             alt="Dreamland event"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-96 md:h-108 object-cover rounded-xl"
           />
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-xl" />
-          <div className="absolute bottom-8 left-8 right-8 flex justify-between items-center">
+          <div
+            id="events"
+            className="absolute bottom-8 md:top-auto top-8 left-8 right-8 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center"
+          >
             <div>
               <h3 className="text-4xl font-light mb-2">{title}</h3>
               <p className="text-sm tracking-wider">{date}</p>
             </div>
             <div className="flex gap-4">
-              <button className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors">
+              <button
+                className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors cursor-pointer"
+                onClick={() => router.push(`/events/${eventId}`)}
+              >
                 INFO
               </button>
-              <button className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors">
+              <Link
+                href={ticketUrl}
+                target="_blank"
+                className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors cursor-pointer"
+              >
                 TICKETS
-              </button>
+              </Link>
             </div>
           </div>
         </div>

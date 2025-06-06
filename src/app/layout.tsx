@@ -60,64 +60,104 @@ export default function RootLayout({
           <meta name="twitter:image" content="https://www.momentomagico.lk/assets/images/logo.png" />
           <meta name="twitter:site" content="@momentomagico.lk" />
 
-          <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Momento Magico",
-                "url": "https://www.momentomagico.lk",
-                "logo": "https://www.momentomagico.lk/assets/images/logo.png",
-                "founders": [
-                    {
-                        "@type": "Person",
-                        "name": "Harindu Liyanage",
-                        "jobTitle": "Co-Founder",
-                        "sameAs": "https://www.linkedin.com/in/harindu-sulochana-liyanage"
-                    },
-                    {
-                        "@type": "Person",
-                        "name": "Nipuna Akalana Perera",
-                        "jobTitle": "Co-Founder",
-                        "sameAs": "https://www.linkedin.com/in/nipuna-akalana-perera"
-                    }
-                ],
-                "sameAs": [
-                    "https://www.facebook.com/momentomagico.lk",
-                    "https://www.instagram.com/momentomagico.lk",
-                    "https://www.tiktok.com/@momentomagico.lk",
-                    "https://www.youtube.com/@MomentoMagico-lk"
-                ],
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "email": "info@momentomagico.lk",
-                    "contactType": "customer support"
-                },
-                "event": {
-                    "@type": "MusicEvent",
-                    "name": "Dreamland 2025",
-                    "startDate": "2025-09-27",
-                    "endDate": "2025-09-28",
-                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                    "eventStatus": "https://schema.org/EventScheduled",
-                    "location": {
-                        "@type": "Place",
-                        "name": "TBA, Sri Lanka",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressCountry": "LK"
-                        }
-                    },
-                    "organizer": {
-                        "@type": "Organization",
-                        "name": "Momento Magico",
-                        "url": "https://www.momentomagico.lk"
-                    }
-                }
-            }),
-          }}
-        />
+          <link rel="canonical" href="https://www.momentomagico.lk" />
+
+              <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                          "@context": "https://schema.org",
+                          "@type": "Organization",
+                          "name": "Momento Magico",
+                          "url": "https://www.momentomagico.lk",
+                          "logo": "https://www.momentomagico.lk/assets/images/logo.png",
+                          "founders": [
+                              {
+                                  "@type": "Person",
+                                  "name": "Harindu Liyanage",
+                                  "jobTitle": "Co-Founder",
+                                  "sameAs": "https://www.linkedin.com/in/harindu-sulochana-liyanage"
+                              },
+                              {
+                                  "@type": "Person",
+                                  "name": "Nipuna Akalana Perera",
+                                  "jobTitle": "Co-Founder",
+                                  "sameAs": "https://www.linkedin.com/in/nipuna-akalana-perera"
+                              }
+                          ],
+                          "sameAs": [
+                              "https://www.facebook.com/momentomagico.lk",
+                              "https://www.instagram.com/momentomagico.lk",
+                              "https://www.tiktok.com/@momentomagico.lk",
+                              "https://www.youtube.com/@MomentoMagico-lk",
+                              "https://www.linkedin.com/company/momento-magico-lk"
+                          ],
+                          "contactPoint": {
+                              "@type": "ContactPoint",
+                              "email": "info@momentomagico.lk",
+                              "contactType": "customer support"
+                          },
+                          "event": {
+                              "@type": "MusicEvent",
+                              "name": "Dreamland 2025",
+                              "startDate": "2025-09-27T19:00:00+05:30",
+                              "endDate": "2025-09-28T03:00:00+05:30",
+                              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                              "eventStatus": "https://schema.org/EventScheduled",
+                              "description": "An electrifying night of progressive music featuring international artists Elline & Backeer, alongside 8 of Sri Lanka's top progressive acts.",
+                              "image": [
+                                  "https://www.momentomagico.lk/assets/images/events/thamnail.webp"
+                              ],
+                              "performer": [
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Elline & Backeer"
+                                  },
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Ultra"
+                                  },
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Iman Cader"
+                                  },
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Echo Draft"
+                                  },
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Vegaz"
+                                  },
+                                  {
+                                      "@type": "PerformingGroup",
+                                      "name": "Kyotto"
+                                  }
+                              ],
+                              "offers": {
+                                  "@type": "Offer",
+                                  "url": "https://www.spotseeker.lk/event/681e040594873",
+                                  "price": "4000.00",
+                                  "priceCurrency": "LKR",
+                                  "availability": "https://schema.org/InStock"
+                              },
+                              "location": {
+                                  "@type": "Place",
+                                  "name": "Port City, Sri Lanka",
+                                  "address": {
+                                      "@type": "PostalAddress",
+                                      "addressCountry": "LK"
+                                  }
+                              },
+                              "organizer": {
+                                  "@type": "Organization",
+                                  "name": "Momento Magico",
+                                  "url": "https://www.momentomagico.lk"
+                              }
+                          }
+                      })
+                  }}
+              />
       </head>
       <body className={afacad.className}>
         {children}

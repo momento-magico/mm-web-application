@@ -60,8 +60,7 @@ export default function RootLayout({
           <meta name="twitter:image" content="https://www.momentomagico.lk/assets/images/logo.png" />
           <meta name="twitter:site" content="@momentomagico.lk" />
 
-          <!-- Canonical URL -->
-          <link rel="canonical" href="https://www.momentomagico.lk">
+          <link rel="canonical" href="https://www.momentomagico.lk" />
 
               <script
                   type="application/ld+json"

@@ -59,14 +59,14 @@ export const ContactUs = () => {
             <Link
               href="https://facebook.com/momentomagico.lk"
               target="_blank"
-              aria-description="Welcome to the official Facebook page of Momento Magico! Follow us for the latest updates, exclusive content, and magical moments!"
+              aria-label="Welcome to the official Facebook page of Momento Magico! Follow us for the latest updates, exclusive content, and magical moments!"
               className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
             >
               <Facebook size={20} />
             </Link>
             <Link
               href="https://www.instagram.com/momentomagico.lk"
-              aria-description="Welcome to the official Instagram of Momento Magico! Follow us on Instagram for behind-the-scenes content, artist highlights, and exclusive festival updates!"
+              aria-label="Welcome to the official Instagram of Momento Magico! Follow us on Instagram for behind-the-scenes content, artist highlights, and exclusive festival updates!"
               target="_blank"
               className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
             >
@@ -74,7 +74,7 @@ export const ContactUs = () => {
             </Link>
             <Link
               href="https://www.youtube.com/@MomentoMagico-lk"
-              aria-description="Welcome to the official YouTube channel of Momento Magico! We capture unforgettable memories. Subscribe for client stories, event highlights, and exclusive behind-the-scenes content."
+              aria-label="Welcome to the official YouTube channel of Momento Magico! We capture unforgettable memories. Subscribe for client stories, event highlights, and exclusive behind-the-scenes content."
               target="_blank"
               className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
             >
@@ -83,7 +83,7 @@ export const ContactUs = () => {
             <Link
               href="https://www.tiktok.com/@momentomagico.lk"
               target="_blank"
-              aria-description="Welcome to the official Tiktok of Momento Magico! Discover the magic behind every moment. Explore our latest events, exclusive content, and special offers."
+              aria-label="Welcome to the official Tiktok of Momento Magico! Discover the magic behind every moment. Explore our latest events, exclusive content, and special offers."
               className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
             >
               <svg
@@ -119,7 +119,7 @@ export const ContactUs = () => {
             <Link
               href="https://www.linkedin.com/company/momento-magico-lk"
               target="_blank"
-              aria-description="Welcome to the official Linkedin Page of Momento Magico!Follow us to stay updated on our latest projects, behind-the-scenes insights, and industry trends."
+              aria-label="Welcome to the official Linkedin Page of Momento Magico!Follow us to stay updated on our latest projects, behind-the-scenes insights, and industry trends."
               className="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
             >
               <Linkedin size={20} />

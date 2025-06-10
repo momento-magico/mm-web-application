@@ -17,7 +17,7 @@ const ChatButton = () => {
       >
         {/* WhatsApp */}
         <a
-          href="https://wa.me/+94775938851"
+          href="https://wa.me/+94762626554"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center bg-green-600 text-white rounded-full pr-1 p-3 shadow-lg shadow-green-900/20 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-900/30"

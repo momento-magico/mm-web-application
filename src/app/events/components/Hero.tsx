@@ -50,7 +50,7 @@ export function Hero() {
           variants={itemVariants}
           className="text-xl md:text-2xl mb-12 text-center z-50"
         >
-          27.07.2025 — Sri Lanka
+          27.09.2025 — Sri Lanka
         </motion.h2>
       </motion.div>
 

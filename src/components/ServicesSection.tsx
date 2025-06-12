@@ -125,7 +125,7 @@ export const ServicesSection = () => {
         <EventCard
           title={"DREAMLAND"}
           ticketUrl="https://www.spotseeker.lk/event/681e040594873"
-          eventId="dreamland"
+          eventId="dreamland-2025"
           date={"SEPTEMBER 27, 2025"}
           heading={"Where Dreams, Drop Beats !"}
           description={

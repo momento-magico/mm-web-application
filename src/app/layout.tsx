@@ -140,6 +140,7 @@ export default function RootLayout({
                                   "url": "https://www.spotseeker.lk/event/681e040594873",
                                   "price": "4000.00",
                                   "priceCurrency": "LKR",
+                                  "validFrom": "2025-05-27T19:00:00+05:30",
                                   "availability": "https://schema.org/InStock"
                               },
                               "location": {

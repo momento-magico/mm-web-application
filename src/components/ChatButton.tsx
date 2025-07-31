@@ -1,5 +1,19 @@
+"use client";
+
 import React, { useState } from "react";
 import { MessageCircle, Plus } from "lucide-react";
+import { motion } from "framer-motion";
+
+const shakeKeyframes = {
+  x: [0, -6, 6, -4, 4, -2, 2, 0],
+};
+
+const shakeTransition = {
+  repeat: Infinity,
+  duration: 1.2,
+  ease: "easeInOut",
+  delay: 3, // optional: delay before first shake
+};
 const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleChat = () => {
@@ -140,21 +154,30 @@ const ChatButton = () => {
         </a>
       </div>
       {/* Main Chat Button */}
-      <button
+      <motion.button
         onClick={toggleChat}
-        className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg focus:outline-none transform transition-all duration-300 cursor-pointer ${
-          isOpen
-            ? "bg-red-600 shadow-red-900/20 rotate-45"
-            : "bg-gray-800 hover:bg-gray-700 shadow-gray-900/20 hover:scale-110"
-        }`}
+        style={{ backfaceVisibility: "hidden" }}
+        initial={{ scale: 0.4 }}
+        animate={{ scale: 1.4 }}
+        transition={{
+          duration: 1.8,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className={`will-change-transform flex items-center justify-center w-14 h-14 rounded-full focus:outline-none transform transition-all duration-300 cursor-pointer
+          ${
+            isOpen
+              ? "bg-red-600 rotate-45 shadow-[0_4px_15px_rgba(255,255,255,0.4)]"
+              : "bg-gray-800 hover:bg-gray-700 hover:scale-110 shadow-[0_4px_15px_rgba(255,255,255,0.4)]"
+          }`}
         aria-label={isOpen ? "Close chat options" : "Open chat options"}
       >
         {isOpen ? (
-          <Plus size={24} className="text-white" />
+          <Plus size={28} className="text-white" />
         ) : (
-          <MessageCircle size={24} className="text-white" />
+          <MessageCircle size={28} className="text-white" />
         )}
-      </button>
+      </motion.button>
     </div>
   );
 };

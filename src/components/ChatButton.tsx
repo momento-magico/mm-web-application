@@ -4,16 +4,6 @@ import React, { useState } from "react";
 import { MessageCircle, Plus } from "lucide-react";
 import { motion } from "framer-motion";
 
-const shakeKeyframes = {
-  x: [0, -6, 6, -4, 4, -2, 2, 0],
-};
-
-const shakeTransition = {
-  repeat: Infinity,
-  duration: 1.2,
-  ease: "easeInOut",
-  delay: 3, // optional: delay before first shake
-};
 const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleChat = () => {

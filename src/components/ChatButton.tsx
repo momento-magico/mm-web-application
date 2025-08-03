@@ -10,7 +10,7 @@ const ChatButton = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="fixed bottom-12 md:bottom-6 right-6 z-50 ">
+    <div className="fixed bottom-10 md:bottom-6 right-6 z-50 ">
       {/* Social Options */}
       <div
         className={`flex flex-col-reverse gap-3 mb-3 transition-all duration-500 ease-in-out ${

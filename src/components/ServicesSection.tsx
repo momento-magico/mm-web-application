@@ -8,15 +8,13 @@ import lion from "../../public/assets/images/lion.png";
 import notlike from "../../public/assets/images/notlike us.jpg";
 import koko from "../../public/assets/images/koko.png";
 import pickme from "../../public/assets/images/pickme.png";
-import ctc from "../../public/assets/images/ctc.jpg";
-import sun from "../../public/assets/images/sunfm.jpg";
+import ctc from "../../public/assets/images/ctc.png";
+import sun from "../../public/assets/images/sunfm.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { EventCard } from "./EventCard";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Marquee from "react-fast-marquee";
 
 export const ServicesSection = () => {
   const settings = {
@@ -24,7 +22,7 @@ export const ServicesSection = () => {
     infinite: true,
 
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     arrows: true,
   };
@@ -113,8 +111,8 @@ export const ServicesSection = () => {
           </motion.div>
         </motion.div>
         {/* Sponsors Row */}
-        <div className="hidden md:block px-4">
-          <Slider {...settings} slidesPerRow={4} speed={5000}>
+        <div className=" md:block px-4">
+          <Marquee>
             <div className=" h-16 w-48">
               <Image
                 src={notlike}
@@ -122,21 +120,21 @@ export const ServicesSection = () => {
                 className="h-16 object-contain"
               />
             </div>
-            <div className=" h-16 w-48">
-              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
+            <div className=" h-12 w-48">
+              <Image src={koko} alt="KOKO" className="h-12 object-contain" />
             </div>
-            <div className=" h-16 w-48">
+            <div className=" h-15 w-48">
               <Image
                 src={pickme}
                 alt="Pickme"
-                className="h-16 object-contain"
+                className="h-15 object-contain"
               />
             </div>
             <div className=" h-16 w-48">
               <Image src={sun} alt="SunFM" className="h-16 object-contain" />
             </div>
-            <div className=" h-16 w-48">
-              <Image src={ctc} alt="CTC" className="h-16 object-contain" />
+            <div className=" h-12 w-48">
+              <Image src={ctc} alt="CTC" className="h-12 object-contain" />
             </div>
             <div className=" h-12 w-48">
               <Image
@@ -158,69 +156,10 @@ export const ServicesSection = () => {
             <div className=" h-24 w-48">
               <Image src={lion} alt="lion" className="h-24 object-contain" />
             </div>
-            <div className=" h-18 w-48">
-              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
-            </div>
-            <div className=" h-18 w-48">
-              <Image
-                src={pickme}
-                alt="Pickme"
-                className="h-16 object-contain"
-              />
-            </div>
-            <div className=" h-18 w-48">
-              <Image src={sun} alt="SunFM" className="h-16 object-contain" />
-            </div>
-          </Slider>
+           
+          </Marquee>
         </div>
-        {/* Sponsors Row mobile */}
-        <div className="block md:hidden mt-8 px-8">
-          <Slider {...settings} slidesPerRow={1} speed={1700}>
-            <div className=" h-16 w-48">
-              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
-            </div>
-            <div className=" h-16 w-48">
-              <Image
-                src={pickme}
-                alt="Pickme"
-                className="h-16 object-contain"
-              />
-            </div>
-            <div className=" h-16 w-48">
-              <Image src={sun} alt="SunFM" className="h-16 object-contain" />
-            </div>
-            <div className=" h-16 w-48">
-              <Image src={ctc} alt="CTC" className="h-16 object-contain" />
-            </div>
-            <div className=" h-14 w-48">
-              <Image
-                src={redbull}
-                alt="Red Bull"
-                className="h-14 object-contain"
-              />
-            </div>
-            <div className=" h-14 w-48">
-              <Image
-                src={bacadi}
-                alt="Bacadi"
-                className="h-14 object-contain"
-              />
-            </div>
-            <div className=" h-20 w-full pl-6">
-              <Image
-                src={notlike}
-                alt="notlike"
-                className="h-18 object-contain"
-              />
-            </div>
-            <div className=" h-20 w-full pl-12">
-              <Image src={dist} alt="Disti" className="h-18 object-contain" />
-            </div>
-            <div className=" h-16 w-48">
-              <Image src={lion} alt="lion" className="h-16 object-contain" />
-            </div>
-          </Slider>
-        </div>
+
         <hr className="h-px mb-8 md:mb-8 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}
         {/* <CountdownTimer /> */}

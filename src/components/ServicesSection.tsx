@@ -22,11 +22,11 @@ export const ServicesSection = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: false,
+    arrows: true,
   };
   const container = {
     hidden: {},
@@ -113,8 +113,8 @@ export const ServicesSection = () => {
           </motion.div>
         </motion.div>
         {/* Sponsors Row */}
-        <div className="hidden md:block">
-          <Slider {...settings} slidesPerRow={4}>
+        <div className="hidden md:block px-4">
+          <Slider {...settings} slidesPerRow={4} speed={5000}>
             <div className=" h-16 w-48">
               <Image
                 src={notlike}
@@ -174,8 +174,8 @@ export const ServicesSection = () => {
           </Slider>
         </div>
         {/* Sponsors Row mobile */}
-        <div className="block md:hidden mt-4">
-          <Slider {...settings} slidesPerRow={2}>
+        <div className="block md:hidden mt-8 px-8">
+          <Slider {...settings} slidesPerRow={1} speed={1200}>
             <div className=" h-16 w-48">
               <Image src={koko} alt="KOKO" className="h-16 object-contain" />
             </div>
@@ -206,25 +206,18 @@ export const ServicesSection = () => {
                 className="h-14 object-contain"
               />
             </div>
-            <div className=" h-20 w-48">
+            <div className=" h-20 w-full pl-6">
               <Image
                 src={notlike}
                 alt="notlike"
                 className="h-18 object-contain"
               />
             </div>
-            <div className=" h-20 w-48">
+            <div className=" h-20 w-full pl-12">
               <Image src={dist} alt="Disti" className="h-18 object-contain" />
             </div>
             <div className=" h-16 w-48">
               <Image src={lion} alt="lion" className="h-16 object-contain" />
-            </div>
-            <div className=" h-14 w-48">
-              <Image
-                src={bacadi}
-                alt="Bacadi"
-                className="h-12 object-contain"
-              />
             </div>
           </Slider>
         </div>

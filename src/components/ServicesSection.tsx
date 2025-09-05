@@ -1,6 +1,10 @@
 "use client";
 
 import { Music, Disc, Radio } from "lucide-react";
+import redbull from "../../public/assets/images/redbull.webp";
+import bacadi from "../../public/assets/images/baca.webp";
+import dist from "../../public/assets/images/dist.png";
+import lion from "../../public/assets/images/lion.png";
 import notlike from "../../public/assets/images/notlike us.jpg";
 import koko from "../../public/assets/images/koko.png";
 import pickme from "../../public/assets/images/pickme.png";
@@ -10,7 +14,20 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { EventCard } from "./EventCard";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 export const ServicesSection = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+  };
   const container = {
     hidden: {},
     show: {
@@ -96,32 +113,120 @@ export const ServicesSection = () => {
           </motion.div>
         </motion.div>
         {/* Sponsors Row */}
-        <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 my-4 md:mt-32 md:mb-8 md:mr-8">
-          <div className=" h-16 w-48">
-            <Image
-              src={notlike}
-              alt="notlike"
-              className="h-16 object-contain"
-            />
-          </div>
-          <div className=" h-16 w-48">
-            <Image src={koko} alt="KOKO" className="h-16 object-contain" />
-          </div>
-          <div className=" h-16 w-48">
-            <Image src={pickme} alt="Pickme" className="h-16 object-contain" />
-          </div>
-          <div className=" h-16 w-48">
-            <Image src={sun} alt="SunFM" className="h-16 object-contain" />
-          </div>
-          <div className=" h-16 w-48">
-            <Image src={ctc} alt="CTC" className="h-16 object-contain" />
-          </div>
-          {/* <div className=" h-36 w-48">
-            <Image src={asian} alt="Asian" className="h-36 object-contain" />
-          </div> */}
-          {/* <div className=" h-16 w-48">
-            <Image src={sun} alt="Sun FM" className="h-16 object-contain" />
-          </div> */}
+        <div className="hidden md:block">
+          <Slider {...settings} slidesPerRow={4}>
+            <div className=" h-16 w-48">
+              <Image
+                src={notlike}
+                alt="notlike"
+                className="h-16 object-contain"
+              />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
+            </div>
+            <div className=" h-16 w-48">
+              <Image
+                src={pickme}
+                alt="Pickme"
+                className="h-16 object-contain"
+              />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={sun} alt="SunFM" className="h-16 object-contain" />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={ctc} alt="CTC" className="h-16 object-contain" />
+            </div>
+            <div className=" h-12 w-48">
+              <Image
+                src={redbull}
+                alt="Red Bull"
+                className="h-12 object-contain"
+              />
+            </div>
+            <div className=" h-12 w-48">
+              <Image
+                src={bacadi}
+                alt="Bacadi"
+                className="h-12 object-contain"
+              />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={dist} alt="Disti" className="h-16 object-contain" />
+            </div>
+            <div className=" h-24 w-48">
+              <Image src={lion} alt="lion" className="h-24 object-contain" />
+            </div>
+            <div className=" h-18 w-48">
+              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
+            </div>
+            <div className=" h-18 w-48">
+              <Image
+                src={pickme}
+                alt="Pickme"
+                className="h-16 object-contain"
+              />
+            </div>
+            <div className=" h-18 w-48">
+              <Image src={sun} alt="SunFM" className="h-16 object-contain" />
+            </div>
+          </Slider>
+        </div>
+        {/* Sponsors Row mobile */}
+        <div className="block md:hidden mt-4">
+          <Slider {...settings} slidesPerRow={2}>
+            <div className=" h-16 w-48">
+              <Image src={koko} alt="KOKO" className="h-16 object-contain" />
+            </div>
+            <div className=" h-16 w-48">
+              <Image
+                src={pickme}
+                alt="Pickme"
+                className="h-16 object-contain"
+              />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={sun} alt="SunFM" className="h-16 object-contain" />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={ctc} alt="CTC" className="h-16 object-contain" />
+            </div>
+            <div className=" h-14 w-48">
+              <Image
+                src={redbull}
+                alt="Red Bull"
+                className="h-14 object-contain"
+              />
+            </div>
+            <div className=" h-14 w-48">
+              <Image
+                src={bacadi}
+                alt="Bacadi"
+                className="h-14 object-contain"
+              />
+            </div>
+            <div className=" h-20 w-48">
+              <Image
+                src={notlike}
+                alt="notlike"
+                className="h-18 object-contain"
+              />
+            </div>
+            <div className=" h-20 w-48">
+              <Image src={dist} alt="Disti" className="h-18 object-contain" />
+            </div>
+            <div className=" h-16 w-48">
+              <Image src={lion} alt="lion" className="h-16 object-contain" />
+            </div>
+            <div className=" h-14 w-48">
+              <Image
+                src={bacadi}
+                alt="Bacadi"
+                className="h-12 object-contain"
+              />
+            </div>
+          </Slider>
         </div>
         <hr className="h-px mb-8 md:mb-8 md:my-16 bg-white/10 border-0" />
         {/* Countdown Timer */}
@@ -135,7 +240,9 @@ export const ServicesSection = () => {
           description={
             "Get ready to lose yourself in the rhythm! Dreamland is back, bringing electrifying energy, mind-blowing visuals, and the hottest EDM acts under one sky. Whether you're a seasoned raver or a first-time dreamer, this is your invitation to an unforgettable night of music, lights, and pure euphoria"
           }
-          tagline={"Mark your calendar. Gather your crew. Let’s make dreams happen."}
+          tagline={
+            "Mark your calendar. Gather your crew. Let’s make dreams happen."
+          }
         />
         <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div>
       </div>

@@ -19,7 +19,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export const ServicesSection = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,

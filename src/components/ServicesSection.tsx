@@ -17,15 +17,6 @@ import { EventCard } from "./EventCard";
 import Marquee from "react-fast-marquee";
 
 export const ServicesSection = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-
-    slidesToShow: 1,
-    slidesToScroll: 2,
-    autoplay: true,
-    arrows: true,
-  };
   const container = {
     hidden: {},
     show: {
@@ -156,7 +147,6 @@ export const ServicesSection = () => {
             <div className=" h-24 w-48">
               <Image src={lion} alt="lion" className="h-24 object-contain" />
             </div>
-           
           </Marquee>
         </div>
 

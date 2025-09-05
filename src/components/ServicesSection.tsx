@@ -1,10 +1,11 @@
 "use client";
 
 import { Music, Disc, Radio } from "lucide-react";
-import redbull from "../../public/assets/images/redbull.webp";
-import bacadi from "../../public/assets/images/baca.webp";
-import dist from "../../public/assets/images/dist.png";
-import lion from "../../public/assets/images/lion.png";
+import notlike from "../../public/assets/images/notlike us.jpg";
+import koko from "../../public/assets/images/koko.png";
+import pickme from "../../public/assets/images/pickme.png";
+import ctc from "../../public/assets/images/ctc.jpg";
+import sun from "../../public/assets/images/sunfm.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { EventCard } from "./EventCard";
@@ -96,21 +97,24 @@ export const ServicesSection = () => {
         </motion.div>
         {/* Sponsors Row */}
         <div className="flex justify-between items-center space-x-5 md:space-x-12 opacity-70 my-4 md:mt-32 md:mb-8 md:mr-8">
-          <div className=" h-12 w-48">
+          <div className=" h-16 w-48">
             <Image
-              src={redbull}
-              alt="Red Bull"
-              className="h-12 object-contain"
+              src={notlike}
+              alt="notlike"
+              className="h-16 object-contain"
             />
           </div>
-          <div className=" h-12 w-48">
-            <Image src={bacadi} alt="Bacadi" className="h-12 object-contain" />
+          <div className=" h-16 w-48">
+            <Image src={koko} alt="KOKO" className="h-16 object-contain" />
           </div>
-          <div className=" h-10 w-48">
-            <Image src={dist} alt="Disti" className="h-10 object-contain" />
+          <div className=" h-16 w-48">
+            <Image src={pickme} alt="Pickme" className="h-16 object-contain" />
           </div>
-          <div className=" h-24 w-48">
-            <Image src={lion} alt="lion" className="h-24 object-contain" />
+          <div className=" h-16 w-48">
+            <Image src={sun} alt="SunFM" className="h-16 object-contain" />
+          </div>
+          <div className=" h-16 w-48">
+            <Image src={ctc} alt="CTC" className="h-16 object-contain" />
           </div>
           {/* <div className=" h-36 w-48">
             <Image src={asian} alt="Asian" className="h-36 object-contain" />

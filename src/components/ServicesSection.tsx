@@ -175,7 +175,7 @@ export const ServicesSection = () => {
         </div>
         {/* Sponsors Row mobile */}
         <div className="block md:hidden mt-8 px-8">
-          <Slider {...settings} slidesPerRow={1} speed={1200}>
+          <Slider {...settings} slidesPerRow={1} speed={1700}>
             <div className=" h-16 w-48">
               <Image src={koko} alt="KOKO" className="h-16 object-contain" />
             </div>

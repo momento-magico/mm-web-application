@@ -1,12 +1,7 @@
-"use client"
-
 import { ContactUs } from "@/components/ContactUs";
 import { DreamSection } from "../components/DreamSection";
+import HeroSection from "../components/HeroSection";
 import { ServicesSection } from "../components/ServicesSection";
-import dynamic from "next/dynamic";
-const HeroSection = dynamic(() => import("../components/HeroSection"), {
-  ssr: false,
-});
 
 export default function Home() {
   return (

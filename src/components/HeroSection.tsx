@@ -49,7 +49,7 @@ const HeroSection = () => {
           />
         </div>
         <video
-          className="w-full aspect-[9:16] md:aspect-[16/9] object-cover"
+          className="w-full aspect-[9/16] md:aspect-[16/9] object-cover"
           controls={false}
           playsInline
           autoPlay
@@ -57,10 +57,7 @@ const HeroSection = () => {
           loop
           preload="auto"
         >
-          <source
-            src={`/assets/videos/hero.mp4`}
-            type="video/mp4"
-          />
+          <source src="/assets/videos/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

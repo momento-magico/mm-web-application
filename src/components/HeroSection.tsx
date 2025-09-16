@@ -58,7 +58,7 @@ const HeroSection = () => {
           preload="auto"
         >
           <source
-            src={`${window.location.origin}/assets/videos/hero.mp4`}
+            src={`/assets/videos/hero.mp4`}
             type="video/mp4"
           />
           Your browser does not support the video tag.

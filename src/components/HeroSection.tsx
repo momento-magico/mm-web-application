@@ -57,7 +57,16 @@ const HeroSection = () => {
           loop
           preload="auto"
         >
-          <source src="/assets/videos/hero.mp4" type="video/mp4" />
+          <source
+            src="/assets/videos/hero_mobile.mp4"
+            type="video/mp4"
+            media="(max-width: 768px)"
+          />
+          <source
+            src="/assets/videos/hero.mp4"
+            type="video/mp4"
+             media="(min-width: 769px)"
+          />
           Your browser does not support the video tag.
         </video>
       </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { Header } from "./Header";
-import banner from "../../public/assets/images/banner.avif";
 import animatedText from "../../public/assets/images/text_animation.gif";
 import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
@@ -49,13 +48,21 @@ const HeroSection = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <Image
-          src={banner}
-          fill
-          priority
-          alt="Concert stage with blue lights"
-          className="w-full h-full object-cover"
-        />
+        <video
+          className="w-full aspect-[9:16] md:aspect-[16/9] object-cover"
+          controls={false}
+          playsInline
+          autoPlay
+          muted
+          loop
+          preload="auto"
+        >
+          <source
+            src={`${window.location.origin}/assets/videos/hero.mp4`}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
       {/* Content */}
       <div className="relative z-20 container mx-auto h-[calc(100vh-200px)] flex flex-col justify-center items-center pt-100 md:pt-220 md:pb-16">
@@ -85,7 +92,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="w-[2px] h-15 md:h-60  bg-white/50 mx-auto"
+            className="w-[2px] h-15 md:h-60 mb-16 md:mb-0 bg-white/50 mx-auto"
           />
         </motion.div>
       </div>

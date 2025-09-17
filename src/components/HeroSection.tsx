@@ -4,23 +4,7 @@ import { Header } from "./Header";
 import animatedText from "../../public/assets/images/text_animation.gif";
 import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
-import { motion } from "framer-motion";
 const HeroSection = () => {
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <section className="relative w-full h-screen md:min-h-screen overflow-hidden px-8 md:px-0">
       <Header />
@@ -64,12 +48,11 @@ const HeroSection = () => {
           <source
             src="/assets/videos/hero.mp4"
             type="video/mp4"
-             media="(min-width: 769px)"
+            media="(min-width: 769px)"
           />
           Your browser does not support the video tag.
         </video>
       </div>
-
     </section>
   );
 };

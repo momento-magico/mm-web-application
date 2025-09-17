@@ -21,7 +21,7 @@ const HeroSection = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <div className=" absolute w-screen h-40 top-100 z-1 inert:0 block md:hidden">
+        <div className=" absolute w-screen h-40 top-80 z-1 inert:0 block md:hidden">
           <Image
             src={animatedMobilText}
             fill

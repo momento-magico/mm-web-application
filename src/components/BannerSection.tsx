@@ -1,6 +1,6 @@
 "use client";
 
-import banner from "../../public/assets/images/banner.avif";
+import banner from "../../public/assets/images/banner.jpeg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const BannerSection = () => {

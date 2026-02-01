@@ -2,13 +2,22 @@
 
 import { Header } from "./Header";
 import animatedText from "../../public/assets/images/text_animation.gif";
+import banner from "../../public/assets/images/home_banner.webp";
 import animatedMobilText from "../../public/assets/images/text_animation_mobile.gif";
 import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="relative w-full h-screen md:min-h-screen overflow-hidden px-8 md:px-0">
       <Header />
-
+      <div className="absolute inset-0 -top-30 md:top-0 z-0">
+        <div className="absolute inset-0  bg-gradient-to-b from-[#0A0A0A]/20 to-[#0A0A0A]/100 z-10" />
+        <Image
+          src={banner}
+          priority
+          alt="Concert stage with blue lights"
+          className="w-full h-full "
+        />
+      </div>
       {/* Background Image */}
       <div className="absolute inset-0 -top-20 md:top-0 z-0">
         <div className=" absolute w-screen h-195 top-0 z-1 inert:0 ml-8 hidden md:block">
@@ -31,7 +40,7 @@ const HeroSection = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <video
+        {/* <video
           className="w-full aspect-[9/25] md:aspect-[16/9] object-cover"
           controls={false}
           playsInline
@@ -51,7 +60,7 @@ const HeroSection = () => {
             media="(min-width: 769px)"
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
     </section>
   );

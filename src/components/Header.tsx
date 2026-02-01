@@ -16,7 +16,7 @@ export const Header = () => {
         </Link>
         <nav>
           <MobileNavbar />
-          <ul className=" space-x-8 hidden md:flex">
+          <ul className=" space-x-8 hidden md:flex mr-24">
             <li>
               <Link
                 href="/#events"

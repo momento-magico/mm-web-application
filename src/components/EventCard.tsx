@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import event from "../../public/assets/images/event.png";
+import event from "../../public/assets/images/event.webp";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-
+import { EventInfo } from "./EventInfo";
 interface EventCardProps {
   title: string;
   date: string;
@@ -21,48 +20,47 @@ export const EventCard = ({
   description,
   tagline,
   eventId,
-  ticketUrl,
 }: EventCardProps) => {
   const router = useRouter();
   return (
-    <div className="relative mt-8 mb-8 rounded-xl overflow-hidden">
+    <div className="relative mt-8 mb-8 rounded-xl ">
       <h2 className="text-xl md:text-2xl font-light mb-8 md:mb-12 text-left">
         Upcoming
         <br />
         Festivals & Events
       </h2>
-      <div className="grid md:grid-cols-2 gap-8 mb-6">
+      <div className="grid md:grid-cols-2 gap-8 mb-6 ">
         {/* Left - Image */}
-        <div className="relative">
+        <div className="relative border border-[#D9D9D926] rounded-lg">
           <Image
             src={event}
             alt="Dreamland event"
-            className="w-full h-96 md:h-108 object-cover rounded-xl"
+            className="w-full h-80 md:h-84 object-cover rounded-xl"
           />
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-xl" />
+
+          <div className=" absolute bottom-16 left-4 right-0  md:hidden block">
+            <h5 className="text-3xl font-light">{title}</h5>
+            <p className="text-xs tracking-wider">{date}</p>
+          </div>
           <div
             id="events"
-            className="absolute bottom-8 md:top-auto top-8 left-8 right-8 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center"
+            className="absolute bottom-4 md:top-auto  left-4 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center md:hidden"
           >
-            <div>
-              <h3 className="text-4xl font-light mb-2">{title}</h3>
-              <p className="text-sm tracking-wider">{date}</p>
-            </div>
             <div className="flex gap-4">
               <button
-                className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors cursor-pointer"
+                className="px-8 py-1 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors cursor-pointer"
                 onClick={() => router.push(`/events/${eventId}`)}
               >
                 INFO
               </button>
-              <Link
+              {/* <Link
                 href={ticketUrl}
                 target="_blank"
                 className="px-8 py-2 border border-white/20 rounded-full text-sm uppercase tracking-wider hover:bg-white/10 transition-colors cursor-pointer"
               >
                 TICKETS
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -73,6 +71,7 @@ export const EventCard = ({
           <p className="text-2xl font-light">{tagline}</p>
         </div>
       </div>
+      <EventInfo eventId={eventId} />
     </div>
   );
 };

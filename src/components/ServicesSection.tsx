@@ -33,7 +33,7 @@ export const ServicesSection = () => {
   return (
     <section
       id="events"
-      className="relative w-full bg-[#0A0A0A] text-white pt-12 pb-36 md:pb-50 px-8 md-px-0"
+      className="relative w-full bg-[#0A0A0A] text-white pt-12 pb-4 md:pb-50 px-8 md-px-0"
     >
       <div className="container mx-auto relative z-10">
         {/* Services Grid */}
@@ -166,7 +166,7 @@ export const ServicesSection = () => {
             "Mark your calendar. Gather your crew. Let’s make dreams happen."
           }
         />
-        <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div>
+        {/* <div className="absolute -bottom-26 md:-bottom-42 left-1/2 -translate-x-1/2 w-[2px] h-14 md:h-24 bg-white/50 z-20"></div> */}
       </div>
     </section>
   );

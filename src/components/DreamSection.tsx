@@ -1,5 +1,6 @@
 import Image from "next/image";
-import dream from "../../public/assets/images/dream.avif";
+import dream from "../../public/assets/images/dream.webp";
+import ImageCard from "./ImageCard";
 export const DreamSection = () => {
   return (
     <section className="relative w-full min-h-120 md:h-screen bg-[#0A0A0A] text-white px-4 md:px-0 ">
@@ -12,10 +13,10 @@ export const DreamSection = () => {
           alt="Concert crowd at night with stage lights"
         />
       </div>
+      <ImageCard />
       {/* Content */}
       <div className="relative z-20 container mx-auto pt-4 md:pt-8">
-      <div className="border-t border-white/10 z-20 py-2 hidden md:flex" />
-        <div className="max-w-3xl mx-auto text-center px-4">
+        <div className="absolute -top-90 md:top-140 right-0 left-0 max-w-3xl mx-auto text-center px-4">
           <h2 className="text-2xl md:text-3xl font-light mb-8 tracking-wide">
             The Dream Behind the Beat
           </h2>

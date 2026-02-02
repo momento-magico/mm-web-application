@@ -4,6 +4,7 @@ import Image from "next/image";
 import event from "../../public/assets/images/event.webp";
 import { useRouter } from "next/navigation";
 import { EventInfo } from "./EventInfo";
+import { CountdownDisplay } from "./CountdownDisplay";
 interface EventCardProps {
   title: string;
   date: string;
@@ -38,6 +39,14 @@ export const EventCard = ({
             className="w-full h-80 md:h-84 object-cover rounded-xl"
           />
           {/* Gradient Overlay */}
+          <div className="absolute top-4 left-6 py-2 rounded-lg bg-white flex flex-col justify-center px-3">
+            <span className="text-black text-sm font-bold text-center leading-none">
+              AUG
+            </span>
+            <span className="text-black text-xl font-bold text-center leading-none">
+              12
+            </span>
+          </div>
 
           <div className=" absolute bottom-16 left-4 right-0  md:hidden block">
             <h5 className="text-3xl font-light">{title}</h5>
@@ -66,6 +75,8 @@ export const EventCard = ({
         </div>
         {/* Right - Content */}
         <div className="flex flex-col justify-center p-8">
+          <div className="mb-8 scale-90 md:scale-70 origin-center"><CountdownDisplay /></div>
+          
           <h2 className="text-4xl font-light mb-8">{heading}</h2>
           <p className="text-gray-300 mb-8 leading-relaxed">{description}</p>
           <p className="text-2xl font-light">{tagline}</p>

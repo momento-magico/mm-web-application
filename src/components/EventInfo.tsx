@@ -23,7 +23,7 @@ export const EventInfo = ({ eventId }: Props) => {
 
       <button
         onClick={() => router.push(`/events/${eventId}`)}
-        className="inline-flex items-center gap-2 px-4 py-1 border-2 border-white rounded-2xl text-white text-sm hover:border-gray-400 hover:text-white transition-colors duration-200"
+        className="inline-flex items-center gap-2 px-4 py-1 border-2 border-white rounded-2xl text-white text-sm hover:border-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
       >
         Info
         <div className=" flex relative">

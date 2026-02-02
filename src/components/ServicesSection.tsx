@@ -156,8 +156,8 @@ export const ServicesSection = () => {
         <EventCard
           title={"DREAMLAND"}
           ticketUrl="https://www.spotseeker.lk/event/681e040594873"
-          eventId="dreamland-2025"
-          date={"SEPTEMBER 27, 2025"}
+          eventId="dreamland-2027"
+          date={"SEPTEMBER 12, 2027"}
           heading={"Where Dreams, Drop Beats !"}
           description={
             "Get ready to lose yourself in the rhythm! Dreamland is back, bringing electrifying energy, mind-blowing visuals, and the hottest EDM acts under one sky. Whether you're a seasoned raver or a first-time dreamer, this is your invitation to an unforgettable night of music, lights, and pure euphoria"

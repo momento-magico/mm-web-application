@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import dreamlandImage from "../../../../public/assets/images/events/hero_final.webp";
-import eventIconImage from "../../../../public/assets/images/events/event_icon.png";
+import dreamlandImage from "../../../../../public/assets/images/events/2027/event-header.webp";
+import eventIconImage from "../../../../../public/assets/images/events/event_icon.png";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -40,17 +40,23 @@ export function Hero() {
         animate="visible"
         className="max-w-4xl text-center text-white z-50"
       >
+        <motion.h5
+          className="text-5xl md:text-3xl font-semibold text-center z-50"
+          variants={itemVariants}
+        >
+          2027
+        </motion.h5>
         <motion.h1
           className="text-5xl md:text-7xl font-bold mb-4 text-center z-50"
           variants={itemVariants}
         >
-          Dreamland 2025
+          DREAMLAND
         </motion.h1>
         <motion.h2
           variants={itemVariants}
           className="text-xl md:text-2xl mb-12 text-center z-50"
         >
-          27.09.2025 — Sri Lanka
+          12.09.2027 - Sri Lanka
         </motion.h2>
       </motion.div>
 
@@ -65,8 +71,7 @@ export function Hero() {
           experiences. Let's create something extraordinary together.`}
         </motion.p>
       </div>
-      <div className="mt-12 md:mt-24 h-16 md:h-24 w-px bg-white/30 z-50"></div>
-      <div className="absolute inset-0 w-full h-[55vh] md:h-[70vh] z-2">
+      <div className="absolute inset-0 w-full h-[55vh] md:h-[80vh] z-2">
         <Image
           className="h-full w-full object-cover border-0"
           src={dreamlandImage}
@@ -80,7 +85,7 @@ export function Hero() {
         initial={{ opacity: 0.5 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="absolute inset-0 h-[55vh] md:h-[70vh] bg-gradient-to-b from-[#0A0A0A]/20 to-[#0A0A0A]/100 z-45"
+        className="absolute inset-0 h-[55vh] md:h-[80vh] bg-gradient-to-b from-[#0A0A0A]/20 to-[#0A0A0A]/100 z-45"
       />
     </section>
   );

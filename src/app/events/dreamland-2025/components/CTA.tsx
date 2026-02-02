@@ -7,15 +7,15 @@ export function CTA() {
       <div className="mx-4 flex items-center flex-col md:flex-row gap-6 justify-between bg-black/80 backdrop-blur-sm px-8 py-6 rounded-lg">
         <Countdown targetDate="2025-09-27T00:00:00" />
         <div className="hidden lg:block text-gray-300">
-          27.09.2025 — Sri Lanka
+          27.09.2025 - Sri Lanka
         </div>
-        <Link
+        {/* <Link
           href="https://www.spotseeker.lk/event/681e040594873"
           target="_blank"
           className="px-6 py-2 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 transition-colors text-sm uppercase tracking-wider"
         >
           Buy Tickets
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

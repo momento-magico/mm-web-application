@@ -11,7 +11,7 @@ type TimeLeft = {
 
 const calculateTimeLeft = (): TimeLeft => {
   const now = new Date();
-  const targetDate = new Date("2027-09-12T12:00:00Z");
+  const targetDate = new Date("2026-09-15T12:00:00Z");
   const diff = targetDate.getTime() - now.getTime();
 
   if (diff <= 0) {

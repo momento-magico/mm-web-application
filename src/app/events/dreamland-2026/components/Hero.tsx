@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import dreamlandImage from "../../../../../public/assets/images/events/2027/event-header.webp";
+import dreamlandImage from "../../../../../public/assets/images/events/2026/event-header.webp";
 import eventIconImage from "../../../../../public/assets/images/events/event_icon.png";
 import { motion } from "framer-motion";
 
@@ -44,7 +44,7 @@ export function Hero() {
           className="text-5xl md:text-3xl font-semibold text-center z-50"
           variants={itemVariants}
         >
-          2027
+          2026
         </motion.h5>
         <motion.h1
           className="text-5xl md:text-7xl font-bold mb-4 text-center z-50"
@@ -56,7 +56,7 @@ export function Hero() {
           variants={itemVariants}
           className="text-xl md:text-2xl mb-12 text-center z-50"
         >
-          12.09.2027 - Sri Lanka
+          15.09.2026 - Sri Lanka
         </motion.h2>
       </motion.div>
 

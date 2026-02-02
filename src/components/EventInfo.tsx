@@ -11,7 +11,7 @@ export const EventInfo = ({ eventId }: Props) => {
   return (
     <div className="bg-black/80 rounded-lg p-6 max-w-2xl shadow-2xl absolute -bottom-24 left-10 right-16 border border-[#D9D9D926] hidden md:block">
       <h2 className="text-white text-lg font-bold tracking-wide mb-1">
-        DREAMLAND 2027
+        DREAMLAND 2026
       </h2>
       <p className="text-gray-400 text-sm mb-4">Sri Lanka</p>
 

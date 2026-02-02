@@ -4,9 +4,9 @@ export function CTA() {
   return (
     <div className="w-full max-w-4xl mx-auto mb-0 md:mb-24">
       <div className="mx-4 flex items-center flex-col md:flex-row gap-6 justify-between bg-black/80 backdrop-blur-sm px-8 py-6 rounded-lg">
-        <Countdown targetDate="2027-09-12T00:00:00" />
+        <Countdown targetDate="2026-09-15T00:00:00" />
         <div className="hidden lg:block text-gray-300">
-          12.09.2027 - Sri Lanka
+          15.09.2026 - Sri Lanka
         </div>
         {/* <Link
           href="https://www.spotseeker.lk/event/681e040594873"

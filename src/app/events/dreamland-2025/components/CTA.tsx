@@ -1,6 +1,5 @@
 import React from "react";
 import { Countdown } from "./Countdown";
-import Link from "next/link";
 export function CTA() {
   return (
     <div className="w-full max-w-4xl mx-auto mb-0 md:mb-24">

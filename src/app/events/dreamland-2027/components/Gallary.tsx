@@ -9,6 +9,7 @@ import gel5 from "../../../../../public/assets/images/home_gel_5.webp";
 import gel6 from "../../../../../public/assets/images/home_gel_6.webp";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const responsive = {
   desktop: {
@@ -28,7 +29,7 @@ const responsive = {
   },
 };
 
-function ImageBox({ src, className = "" }: { src: any; className?: string }) {
+function ImageBox({ src }: { src: string | StaticImport; }) {
   return (
     <div className="relative h-full w-full overflow-hidden rounded-lg">
       <Image

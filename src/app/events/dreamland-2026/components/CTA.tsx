@@ -6,7 +6,7 @@ export function CTA() {
       <div className="mx-4 flex items-center flex-col md:flex-row gap-6 justify-between bg-black/80 backdrop-blur-sm px-8 py-6 rounded-lg">
         <Countdown targetDate="2026-09-15T00:00:00" />
         <div className="hidden lg:block text-gray-300">
-          15.09.2026 - Sri Lanka
+          15.08.2026 - Sri Lanka
         </div>
         {/* <Link
           href="https://www.spotseeker.lk/event/681e040594873"

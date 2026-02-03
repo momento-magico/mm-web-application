@@ -9,7 +9,7 @@ type Props = {
 export const EventInfo = ({ eventId }: Props) => {
   const router = useRouter();
   return (
-    <div className="bg-black/80 rounded-lg p-6 max-w-2xl shadow-2xl absolute -bottom-24 left-10 right-16 border border-[#D9D9D926] hidden md:block">
+    <div className="bg-black/80 rounded-lg p-6 xl:max-w-xl lg:max-w-sm shadow-2xl absolute xl:bottom-0 bottom-20 left-16 right-24 border border-[#D9D9D926] hidden lg:block">
       <h2 className="text-white text-lg font-bold tracking-wide mb-1">
         DREAMLAND 2026
       </h2>

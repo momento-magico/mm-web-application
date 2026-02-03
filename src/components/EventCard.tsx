@@ -30,31 +30,30 @@ export const EventCard = ({
         <br />
         Festivals & Events
       </h2>
-      <div className="grid md:grid-cols-2 gap-8 mb-6 ">
+      <div className="grid lg:grid-cols-2 lg:gap-32 gap:8 lg:mb-6 ">
         {/* Left - Image */}
-        <div className="relative border border-[#D9D9D926] rounded-lg">
+        <div className="relative border border-[#D9D9D926] rounded-lg lg:h-89">
           <Image
             src={event}
             alt="Dreamland event"
-            className="w-full h-80 md:h-84 object-cover rounded-xl"
+            className="w-full h-80 md:h-88 object-cover rounded-xl"
           />
-          {/* Gradient Overlay */}
           <div className="absolute top-4 left-6 py-2 rounded-lg bg-white flex flex-col justify-center px-3">
             <span className="text-black text-sm font-bold text-center leading-none">
               AUG
             </span>
             <span className="text-black text-xl font-bold text-center leading-none">
-              12
+              15
             </span>
           </div>
 
-          <div className=" absolute bottom-16 left-4 right-0  md:hidden block">
+          <div className=" absolute bottom-16 left-4 right-0  lg:hidden block">
             <h5 className="text-3xl font-light">{title}</h5>
             <p className="text-xs tracking-wider">{date}</p>
           </div>
           <div
             id="events"
-            className="absolute bottom-4 md:top-auto  left-4 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center md:hidden"
+            className="absolute bottom-4 md:top-auto left-4 flex flex-col md:flex-row md:justify-between gap-5 items-center justify-center lg:hidden"
           >
             <div className="flex gap-4">
               <button
@@ -77,7 +76,7 @@ export const EventCard = ({
         <div className="flex flex-col justify-center p-8">
           <div className="mb-8 scale-90 md:scale-70 origin-center"><CountdownDisplay /></div>
           
-          <h2 className="text-4xl font-light mb-8">{heading}</h2>
+          <h2 className="text-4xl font-light lg:mb-8">{heading}</h2>
           <p className="text-gray-300 mb-8 leading-relaxed">{description}</p>
           <p className="text-2xl font-light">{tagline}</p>
         </div>

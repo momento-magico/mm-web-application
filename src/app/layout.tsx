@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
-    "Momento Magico | Dreamland 2025 - Progressive Music Festival Sri Lanka",
+    "Momento Magico | Dreamland 2026 - Progressive Music Festival Sri Lanka",
   applicationName: "Momento Magico",
   description:
     "Momento Magico is Sri Lanka’s premier platform for progressive and electronic music events. Discover Dreamland 2025 and join our movement shaping the underground music culture.",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     "momento magico lk",
     "momento magico sl",
     "Momento Magico music festival",
-    "Dreamland 2025 Sri Lanka",
+    "Dreamland 2026 Sri Lanka",
     "Progressive music Sri Lanka",
     "Live music events Colombo",
-    "Electronic music festivals 2025",
+    "Electronic music festivals 2026",
     "Sri Lanka underground events",
     "Momento Magico Dreamland",
     "EDM Sri Lanka",
-    "Nightlife Colombo 2025",
+    "Nightlife Colombo 2026",
   ],
   publisher: "Momento Magico",
   category: "Entertainment",
@@ -41,8 +41,8 @@ const mainSchema = {
   "@context": "https://schema.org",
   "@type": "MusicEvent",
   name: "Dreamland 2025",
-  startDate: "2025-09-27T16:30:00+05:30",
-  endDate: "2025-09-28T08:00:00+05:30",
+  startDate: "2026-08-15T16:30:00+05:30",
+  endDate: "2026-08-16T08:00:00+05:30",
   eventStatus: "https://schema.org/EventScheduled",
   description:
     "Dreamland 2025 is Sri Lanka's biggest progressive music festival featuring world-class artists like Shai T, Elline & Backeer, and a strong local lineup. An unforgettable night of music, lights, and energy awaits at Port City, Colombo.",
@@ -97,8 +97,8 @@ const mainSchema = {
       name: "Opening Set by Keshana and Karo",
       description:
         "Kick off Dreamland 2025 with an energetic 2-hour opening session by Keshana and Karo.",
-      startDate: "2025-09-27T16:30:00+05:30",
-      endDate: "2025-09-27T18:30:00+05:30",
+      startDate: "2026-08-15T16:30:00+05:30",
+      endDate: "2026-08-16T18:30:00+05:30",
       image: [
         "https://lh3.googleusercontent.com/Vp8UGzidIhMqDAVUz-8aOLGXhJuib6dEEIeuhXtz321NvLn-Ehkgwds8GO0fIZtrLhjaSJAhfagfAEpjPQ=s265-w265-h265",
       ],
@@ -140,8 +140,8 @@ const mainSchema = {
       name: "Echo B2B Shai T",
       description:
         "An intense 3-hour back-to-back session with Echo and Shai T.",
-      startDate: "2025-09-28T02:00:00+05:30",
-      endDate: "2025-09-28T05:00:00+05:30",
+      startDate: "2026-08-15T02:00:00+05:30",
+      endDate: "2026-08-16T05:00:00+05:30",
       image: [
         "https://lh3.googleusercontent.com/OZ6-vW4XwYC_Vtufgm_0X_AFx0PB2N8ZqgPEDvAQHxDUb-blIGZuWFAqFKbzmqfDurvDd0j-cHukUGHz6g=s265-w265-h265",
       ],
@@ -183,8 +183,8 @@ const mainSchema = {
       name: "Eline & Backeer",
       description:
         "A thrilling 2-hour session by the renowned duo Eline & Backeer.",
-      startDate: "2025-09-28T10:00:00+05:30",
-      endDate: "2025-09-28T12:00:00+05:30",
+      startDate: "2026-08-15T10:00:00+05:30",
+      endDate: "2026-08-15T12:00:00+05:30",
       image: [
         "https://lh3.googleusercontent.com/ejHQnFpxXLZA6fOf_XAcdR4LRxtn0EAy-2FBF1NNf1WHsURpuDigAj2S6BE2K41UpK4HK_0-3KxYbw-V6g=s265-w265-h265",
       ],

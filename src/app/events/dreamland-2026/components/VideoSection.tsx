@@ -47,10 +47,10 @@ export function VideoSection() {
           {youtubeIds.map((id) => (
             <>
               <div key={id} className="w-full md:flex justify-center hidden ">
-                <YouTube videoId={"xHJCy3qKHu0"} opts={opts} />
+                <YouTube videoId={id} opts={opts} />
               </div>
               <div key={id} className="w-full flex justify-center md:hidden ">
-                <YouTube videoId={"xHJCy3qKHu0"} opts={optsMobile} />
+                <YouTube videoId={id} opts={optsMobile} />
               </div>
             </>
           ))}

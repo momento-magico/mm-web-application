@@ -157,7 +157,7 @@ export const ServicesSection = () => {
           title={"DREAMLAND"}
           ticketUrl="https://www.spotseeker.lk/event/681e040594873"
           eventId="dreamland-2026"
-          date={"SEPTEMBER 15, 2026"}
+          date={"AUGUST 15, 2026"}
           heading={"Where Dreams, Drop Beats !"}
           description={
             "Get ready to lose yourself in the rhythm! Dreamland is back, bringing electrifying energy, mind-blowing visuals, and the hottest EDM acts under one sky. Whether you're a seasoned raver or a first-time dreamer, this is your invitation to an unforgettable night of music, lights, and pure euphoria"

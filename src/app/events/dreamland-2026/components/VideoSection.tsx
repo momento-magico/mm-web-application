@@ -36,7 +36,7 @@ export function VideoSection() {
     height: "390",
     width: "340",
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
   };
   const youtubeIds = ["xHJCy3qKHu0", "omRLu1zHo-k"];
